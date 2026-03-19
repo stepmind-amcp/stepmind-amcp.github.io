@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StepMind Community 鈥?閫愭鎬濊€冿紝鏃犻檺杩涘寲 | Step by Step, Infinite Evolution</title>
+<title>StepMind Community — 逐步思考，无限进化 | Step by Step, Infinite Evolution</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Serif+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-/* 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?   DESIGN SYSTEM 鈥?Organic Intelligence
-   Dark Moss 脳 Phosphor Cyan 脳 Amber Gold
-   鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?*/
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM — Organic Intelligence
+   Dark Moss × Phosphor Cyan × Amber Gold
+   ═══════════════════════════════════════════ */
 :root {
   --ink:        #080c0a;
   --moss-deep:  #0c1410;
@@ -40,7 +41,7 @@
   --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* 鈹€鈹€鈹€ RESET & BASE 鈹€鈹€鈹€ */
+/* ─── RESET & BASE ─── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 16px; }
 
@@ -52,7 +53,7 @@ body {
   cursor: none;
 }
 
-/* 鈹€鈹€鈹€ CUSTOM CURSOR 鈹€鈹€鈹€ */
+/* ─── CUSTOM CURSOR ─── */
 .cursor {
   position: fixed;
   width: 8px; height: 8px;
@@ -81,7 +82,7 @@ body:has(a:hover) .cursor-ring, body:has(button:hover) .cursor-ring {
   width: 48px; height: 48px;
 }
 
-/* 鈹€鈹€鈹€ ORGANIC BACKGROUND 鈹€鈹€鈹€ */
+/* ─── ORGANIC BACKGROUND ─── */
 .bg-canvas {
   position: fixed; inset: 0; z-index: 0; overflow: hidden;
 }
@@ -96,18 +97,18 @@ body:has(a:hover) .cursor-ring, body:has(button:hover) .cursor-ring {
   background-size: 28px 28px;
 }
 
-/* 鈹€鈹€鈹€ TYPOGRAPHY 鈹€鈹€鈹€ */
+/* ─── TYPOGRAPHY ─── */
 .zh { font-family: var(--font-zh); }
 .en { font-family: var(--font-serif); font-style: italic; }
 .mono { font-family: var(--font-mono); }
 
-/* 鈹€鈹€鈹€ LANGUAGE TOGGLE 鈹€鈹€鈹€ */
+/* ─── LANGUAGE TOGGLE ─── */
 [data-lang="zh"] .en-only { display: none; }
 [data-lang="en"] .zh-only { display: none; }
 [data-lang="en"] .zh-text { display: none; }
 [data-lang="zh"] .en-text { display: none; }
 
-/* 鈹€鈹€鈹€ NAVIGATION 鈹€鈹€鈹€ */
+/* ─── NAVIGATION ─── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   padding: 20px 48px;
@@ -180,7 +181,7 @@ nav {
 }
 .nav-cta:hover { background: var(--amber); transform: translateY(-1px); }
 
-/* 鈹€鈹€鈹€ HERO 鈹€鈹€鈹€ */
+/* ─── HERO ─── */
 .hero {
   min-height: 100vh;
   display: flex; flex-direction: column; justify-content: center;
@@ -264,7 +265,7 @@ nav {
   font-size: 9px; color: var(--text-4); letter-spacing: 0.2em; text-transform: uppercase;
 }
 
-/* 鈹€鈹€鈹€ SECTION WRAPPER 鈹€鈹€鈹€ */
+/* ─── SECTION WRAPPER ─── */
 section { position: relative; z-index: 1; }
 .section-inner { max-width: 1200px; margin: 0 auto; padding: 100px 48px; }
 
@@ -290,7 +291,7 @@ section { position: relative; z-index: 1; }
   line-height: 1.8; max-width: 600px; margin-bottom: 56px;
 }
 
-/* 鈹€鈹€鈹€ MANIFESTO 鈹€鈹€鈹€ */
+/* ─── MANIFESTO ─── */
 .manifesto {
   background: var(--moss-deep);
   border-top: 1px solid var(--border);
@@ -324,7 +325,7 @@ section { position: relative; z-index: 1; }
 .manifesto-body p { margin-bottom: 20px; }
 .manifesto-body strong { color: var(--text-1); font-weight: 400; }
 
-/* 鈹€鈹€鈹€ PRINCIPLES 鈹€鈹€鈹€ */
+/* ─── PRINCIPLES ─── */
 .principles-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
   background: var(--border); border: 1px solid var(--border);
@@ -363,7 +364,7 @@ section { position: relative; z-index: 1; }
   font-weight: 300;
 }
 
-/* 鈹€鈹€鈹€ AMCP SECTION 鈹€鈹€鈹€ */
+/* ─── AMCP SECTION ─── */
 .amcp-section { background: var(--ink); }
 .layer-viz {
   display: flex; flex-direction: column; gap: 3px;
@@ -411,7 +412,7 @@ section { position: relative; z-index: 1; }
   color: var(--text-3); position: relative; z-index: 1;
 }
 
-/* 鈹€鈹€鈹€ COMMUNITY ROLES 鈹€鈹€鈹€ */
+/* ─── COMMUNITY ROLES ─── */
 .roles-section { background: var(--moss-deep); border-top: 1px solid var(--border); }
 .roles-orbit {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
@@ -447,7 +448,7 @@ section { position: relative; z-index: 1; }
 }
 .role-how strong { color: var(--text-2); }
 
-/* 鈹€鈹€鈹€ JOURNEY / CONTRIBUTION PATH 鈹€鈹€鈹€ */
+/* ─── JOURNEY / CONTRIBUTION PATH ─── */
 .journey-section { background: var(--ink); }
 .journey-steps {
   position: relative; margin-top: 48px;
@@ -486,11 +487,11 @@ section { position: relative; z-index: 1; }
   padding-left: 16px; position: relative; line-height: 1.7;
 }
 .step-items li::before {
-  content: '鈫?; position: absolute; left: 0;
+  content: '→'; position: absolute; left: 0;
   color: var(--phosphor-d); font-size: 11px;
 }
 
-/* 鈹€鈹€鈹€ ROADMAP 鈹€鈹€鈹€ */
+/* ─── ROADMAP ─── */
 .roadmap-section { background: var(--moss-deep); border-top: 1px solid var(--border); }
 .roadmap-timeline {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
@@ -520,12 +521,12 @@ section { position: relative; z-index: 1; }
 }
 .phase-items li:last-child { border-bottom: none; }
 .phase-items li::before {
-  content: '鈼?; position: absolute; left: 0;
+  content: '◆'; position: absolute; left: 0;
   font-size: 6px; color: var(--phosphor-d);
   top: 8px;
 }
 
-/* 鈹€鈹€鈹€ GOVERNANCE 鈹€鈹€鈹€ */
+/* ─── GOVERNANCE ─── */
 .gov-section { background: var(--ink); }
 .gov-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px;
@@ -572,7 +573,7 @@ section { position: relative; z-index: 1; }
 }
 .gov-principle-desc { font-size: 13px; color: var(--text-3); line-height: 1.7; }
 
-/* 鈹€鈹€鈹€ WHY AMCP 鈹€鈹€鈹€ */
+/* ─── WHY AMCP ─── */
 .why-section {
   background: var(--moss-deep); border-top: 1px solid var(--border);
 }
@@ -602,7 +603,7 @@ section { position: relative; z-index: 1; }
 }
 .why-point-desc { font-size: 13px; color: var(--text-3); line-height: 1.7; }
 
-/* 鈹€鈹€鈹€ CTA 鈹€鈹€鈹€ */
+/* ─── CTA ─── */
 .cta-section {
   background: var(--ink);
   border-top: 1px solid var(--border);
@@ -640,7 +641,7 @@ section { position: relative; z-index: 1; }
 .action-arrow { color: var(--text-4); font-size: 14px; transition: color 0.3s; }
 .action-card:hover .action-arrow { color: var(--phosphor); }
 
-/* 鈹€鈹€鈹€ FOOTER 鈹€鈹€鈹€ */
+/* ─── FOOTER ─── */
 footer {
   background: var(--moss-deep); border-top: 1px solid var(--border);
   padding: 60px 48px 40px; position: relative; z-index: 1;
@@ -690,12 +691,12 @@ footer {
 }
 .badge.open { border-color: var(--phosphor-dim); color: var(--phosphor-d); }
 
-/* 鈹€鈹€鈹€ DIVIDER 鈹€鈹€鈹€ */
+/* ─── DIVIDER ─── */
 hr.organic {
   border: none; border-top: 1px solid var(--border); margin: 0;
 }
 
-/* 鈹€鈹€鈹€ REVEAL ANIMATION 鈹€鈹€鈹€ */
+/* ─── REVEAL ANIMATION ─── */
 .reveal {
   opacity: 0; transform: translateY(32px);
   transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
@@ -706,14 +707,14 @@ hr.organic {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* 鈹€鈹€鈹€ HERO DECORATION 鈹€鈹€鈹€ */
+/* ─── HERO DECORATION ─── */
 .hero-decoration {
   position: absolute; right: 0; top: 50%; transform: translateY(-50%);
   width: 480px; height: 480px; opacity: 0.4;
   pointer-events: none;
 }
 
-/* 鈹€鈹€鈹€ STAT BAR 鈹€鈹€鈹€ */
+/* ─── STAT BAR ─── */
 .stat-bar {
   background: var(--moss-mid); border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -737,7 +738,7 @@ hr.organic {
 .stat-unit-en { font-family: var(--font-mono); font-size: 10px; color: var(--text-4); letter-spacing: 0.15em; text-transform: uppercase; }
 .stat-unit-zh { font-size: 13px; color: var(--text-3); margin-top: 2px; }
 
-/* 鈹€鈹€鈹€ RESPONSIVE 鈹€鈹€鈹€ */
+/* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
   nav { padding: 16px 24px; }
   .nav-links { display: none; }
@@ -759,20 +760,20 @@ hr.organic {
   .section-inner { padding: 64px 24px; }
 }
 
-/* 鈹€鈹€鈹€ GLOW PULSE 鈹€鈹€鈹€ */
+/* ─── GLOW PULSE ─── */
 @keyframes glowPulse {
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
 }
 .glow-pulse { animation: glowPulse 4s ease-in-out infinite; }
 
-/* 鈹€鈹€鈹€ TYPEWRITER 鈹€鈹€鈹€ */
+/* ─── TYPEWRITER ─── */
 @keyframes typeIn {
   from { width: 0; }
   to { width: 100%; }
 }
 
-/* 鈹€鈹€鈹€ LIVE DOT 鈹€鈹€鈹€ */
+/* ─── LIVE DOT ─── */
 .live-dot {
   display: inline-block; width: 6px; height: 6px;
   background: var(--phosphor); border-radius: 50%;
@@ -826,19 +827,19 @@ hr.organic {
       </svg>
     </div>
     <span class="nav-logo-name">Step<span>Mind</span></span>
-    <span class="nav-tagline zh-only">閫愭鎬濊€?/span>
+    <span class="nav-tagline zh-only">逐步思考</span>
     <span class="nav-tagline en-only">Step by Step</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#vision" class="zh-text">鎰挎櫙</a><a href="#vision" class="en-text">Vision</a></li>
-    <li><a href="amcp-spec.html" class="zh-text">AMCP鍗忚</a><a href="amcp-spec.html" class="en-text">AMCP</a></li>
-    <li><a href="#community" class="zh-text">绀惧尯</a><a href="#community" class="en-text">Community</a></li>
-    <li><a href="#roadmap" class="zh-text">璺嚎鍥?/a><a href="#roadmap" class="en-text">Roadmap</a></li>
-    <li><a href="#join" class="zh-text">鍔犲叆鎴戜滑</a><a href="#join" class="en-text">Join Us</a></li>
+    <li><a href="#vision" class="zh-text">愿景</a><a href="#vision" class="en-text">Vision</a></li>
+    <li><a href="amcp-spec.html" class="zh-text">AMCP协议</a><a href="amcp-spec.html" class="en-text">AMCP</a></li>
+    <li><a href="#community" class="zh-text">社区</a><a href="#community" class="en-text">Community</a></li>
+    <li><a href="#roadmap" class="zh-text">路线图</a><a href="#roadmap" class="en-text">Roadmap</a></li>
+    <li><a href="#join" class="zh-text">加入我们</a><a href="#join" class="en-text">Join Us</a></li>
   </ul>
   <div style="display:flex;gap:12px;align-items:center">
-    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN / 涓?/button>
-    <a href="#join" class="nav-cta zh-text">鍙備笌鏋勫缓</a>
+    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN / 中</button>
+    <a href="#join" class="nav-cta zh-text">参与构建</a>
     <a href="#join" class="nav-cta en-text">Build With Us</a>
   </div>
 </nav>
@@ -849,25 +850,28 @@ hr.organic {
   <div class="container" style="max-width:1200px;margin:0 auto">
     <div class="hero-eyebrow reveal">
       <span class="live-dot"></span>
-      <span class="zh-text">AMCP v1.0 路 寮€鏀惧崗璁?路 绀惧尯椹卞姩</span>
-      <span class="en-text">AMCP v1.0 路 Open Protocol 路 Community Driven</span>
+      <span class="zh-text">AMCP v1.0 · 开放协议 · 社区驱动</span>
+      <span class="en-text">AMCP v1.0 · Open Protocol · Community Driven</span>
     </div>
 
     <h1 class="hero-title reveal reveal-delay-1">
-      <span class="line-1 zh-text">閫愭鎬濊€冿紝</span>
+      <span class="line-1 zh-text">逐步思考，</span>
       <span class="line-1 en-text">Step by Step,</span>
-      <span class="line-2 zh-text">鏃犻檺杩涘寲</span>
+      <span class="line-2 zh-text">无限进化</span>
       <span class="line-2 en-text">Infinite Evolution</span>
-      <span class="en-ver zh-text">Step by Step 路 Infinite Evolution</span>
-      <span class="en-ver en-text" style="font-size:0.45em;color:var(--text-3)">閫愭鎬濊€?路 鏃犻檺杩涘寲</span>
+      <span class="en-ver zh-text">Step by Step · Infinite Evolution</span>
+      <span class="en-ver en-text" style="font-size:0.45em;color:var(--text-3)">逐步思考 · 无限进化</span>
     </h1>
 
     <p class="hero-sub reveal reveal-delay-2">
       <span class="zh-text">
-        鎴戜滑鐩镐俊锛岃蹇嗘槸鏅鸿兘鐨勫熀鐭炽€係tepMind 绀惧尯鑷村姏浜庢瀯寤?AI 鏃朵唬鐨勮蹇嗗熀纭€璁炬柦鈥斺€?        閫氳繃 <strong style="color:var(--text-1)">AMCP 鍗忚</strong>锛?        璁?AI 鐨勭煡璇嗕笉鍐嶇鐗囧寲锛岃€屾槸鍙叡浜€佸彲婕斿寲銆佽法骞冲彴銆佽法鐢熷懡鍛ㄦ湡鍦版寔涔呯Н绱€?      </span>
+        我们相信，记忆是智能的基石。StepMind 社区致力于构建 AI 时代的记忆基础设施——
+        通过 <strong style="color:var(--text-1)">AMCP 协议</strong>，
+        让 AI 的知识不再碎片化，而是可共享、可演化、跨平台、跨生命周期地持久积累。
+      </span>
       <span class="en-text">
         Memory is the foundation of intelligence. StepMind builds the memory infrastructure
-        for the AI era 鈥?through <strong style="color:var(--text-1)">AMCP Protocol</strong>,
+        for the AI era — through <strong style="color:var(--text-1)">AMCP Protocol</strong>,
         making AI knowledge persistent, shareable, evolvable, and consistent across any platform and lifetime.
       </span>
     </p>
@@ -875,12 +879,12 @@ hr.organic {
     <div class="hero-actions reveal reveal-delay-3">
       <a href="#join" class="btn-primary">
         <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7H13M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.2"/></svg>
-        <span class="zh-text">鍔犲叆绀惧尯</span>
+        <span class="zh-text">加入社区</span>
         <span class="en-text">Join Community</span>
       </a>
       <a href="amcp-spec.html" class="btn-secondary">
         <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" width="14"><rect x="1" y="1" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1"/><path d="M4 7H10M4 4.5H10M4 9.5H7" stroke="currentColor" stroke-width="1"/></svg>
-        <span class="zh-text">闃呰鍗忚瑙勮寖</span>
+        <span class="zh-text">阅读协议规范</span>
         <span class="en-text">Read the Spec</span>
       </a>
     </div>
@@ -922,22 +926,22 @@ hr.organic {
     <div class="stat-unit reveal">
       <div class="stat-unit-val">7</div>
       <div class="stat-unit-en">Protocol Layers</div>
-      <div class="stat-unit-zh zh-text">鍗忚灞傜骇</div>
+      <div class="stat-unit-zh zh-text">协议层级</div>
     </div>
     <div class="stat-unit reveal reveal-delay-1">
-      <div class="stat-unit-val">鈭?/div>
+      <div class="stat-unit-val">∞</div>
       <div class="stat-unit-en">Evolution Cycles</div>
-      <div class="stat-unit-zh zh-text">杩涘寲鍛ㄦ湡</div>
+      <div class="stat-unit-zh zh-text">进化周期</div>
     </div>
     <div class="stat-unit reveal reveal-delay-2">
       <div class="stat-unit-val">0</div>
       <div class="stat-unit-en">Vendor Lock-in</div>
-      <div class="stat-unit-zh zh-text">鍘傚晢閿佸畾</div>
+      <div class="stat-unit-zh zh-text">厂商锁定</div>
     </div>
     <div class="stat-unit reveal reveal-delay-3">
       <div class="stat-unit-val">100%</div>
       <div class="stat-unit-en">Open Standard</div>
-      <div class="stat-unit-zh zh-text">寮€鏀炬爣鍑?/div>
+      <div class="stat-unit-zh zh-text">开放标准</div>
     </div>
   </div>
 </div>
@@ -948,39 +952,43 @@ hr.organic {
   <div class="manifesto-grid">
     <div class="manifesto-left reveal">
       <div class="section-label" style="margin-bottom:32px">
-        <span class="zh-text">01 鈥?鎰挎櫙</span>
-        <span class="en-text">01 鈥?Vision</span>
+        <span class="zh-text">01 — 愿景</span>
+        <span class="en-text">01 — Vision</span>
       </div>
       <blockquote class="manifesto-quote">
         <span class="zh-text">
-          璁?AI 鎴愪负 <span class="highlight">鐪熸鎷ユ湁璁板繂鐨勫瓨鍦?/span>鈥斺€?br>
-          涓嶆槸姣忔瀵硅瘽褰掗浂鐨勫伐鍏凤紝<br>
-          鑰屾槸鎸佺画绉疮銆佷笉鏂繘鍖栫殑<span class="highlight">鏅烘収浼欎即</span>銆?        </span>
+          让 AI 成为 <span class="highlight">真正拥有记忆的存在</span>——<br>
+          不是每次对话归零的工具，<br>
+          而是持续积累、不断进化的<span class="highlight">智慧伙伴</span>。
+        </span>
         <span class="en-text">
-          Make AI a being that <span class="highlight">truly remembers</span> 鈥?br>
+          Make AI a being that <span class="highlight">truly remembers</span> —<br>
           not a tool that resets every conversation,<br>
           but a <span class="highlight">wisdom companion</span> that accumulates and evolves.
         </span>
       </blockquote>
-      <p class="manifesto-attr zh-text">鈥?StepMind 绀惧尯瀹ｈ█</p>
-      <p class="manifesto-attr en-text">鈥?StepMind Community Manifesto</p>
+      <p class="manifesto-attr zh-text">— StepMind 社区宣言</p>
+      <p class="manifesto-attr en-text">— StepMind Community Manifesto</p>
     </div>
     <div class="manifesto-right reveal reveal-delay-1">
       <div class="manifesto-body">
         <p class="zh-text">
-          <strong>璁板繂鏄櫤鑳界殑鍩虹煶銆?/strong>浜虹被鑺变簡鏁板崄骞存墠寤虹珛璧蜂粖澶╃殑鐭ヨ瘑绉疮鈥斺€旇€屽綋鍓嶇殑 AI锛屾瘡涓€娆″璇濋兘浠庡悓涓€涓捣鐐瑰嚭鍙戯紝鏃犳硶鐪熸"鎴愰暱"銆?        </p>
+          <strong>记忆是智能的基石。</strong>人类花了数十年才建立起今天的知识积累——而当前的 AI，每一次对话都从同一个起点出发，无法真正"成长"。
+        </p>
         <p class="en-text">
-          <strong>Memory is the foundation of intelligence.</strong> Humans spend decades building knowledge 鈥?yet today's AI starts from zero in every conversation, never truly growing.
+          <strong>Memory is the foundation of intelligence.</strong> Humans spend decades building knowledge — yet today's AI starts from zero in every conversation, never truly growing.
         </p>
         <p class="zh-text">
-          StepMind 涓嶆槸瑕佹瀯寤哄張涓€涓?AI 搴旂敤锛岃€屾槸瑕佹瀯寤?<strong>AI 璁板繂灞傜殑"TCP/IP"</strong>鈥斺€斾竴涓紑鏀俱€佺粺涓€銆佸彲杩涘寲鐨勫崗璁爣鍑嗭紝璁╀换鎰?AI 涓庝换鎰忓瓨鍌ㄤ箣闂寸殑鐭ヨ瘑閫氫俊鎴愪负鍩虹璁炬柦锛岃€屼笉鏄瘡瀹堕噸澶嶉€犺疆瀛愩€?        </p>
+          StepMind 不是要构建又一个 AI 应用，而是要构建 <strong>AI 记忆层的"TCP/IP"</strong>——一个开放、统一、可进化的协议标准，让任意 AI 与任意存储之间的知识通信成为基础设施，而不是每家重复造轮子。
+        </p>
         <p class="en-text">
-          StepMind doesn't build another AI app. We build the <strong>"TCP/IP" of AI memory</strong> 鈥?an open, unified, evolvable protocol standard, making knowledge communication between any AI and any storage infrastructure, not reinvented wheels.
+          StepMind doesn't build another AI app. We build the <strong>"TCP/IP" of AI memory</strong> — an open, unified, evolvable protocol standard, making knowledge communication between any AI and any storage infrastructure, not reinvented wheels.
         </p>
         <p class="zh-text">
-          灏卞儚 HTTP 鏀瑰彉浜嗕俊鎭殑娴佸姩鏂瑰紡锛孉MCP 灏嗘敼鍙?<strong>鐭ヨ瘑鐨勭Н绱柟寮?/strong>銆傝繖涓嶆槸涓€涓叕鍙哥殑浜у搧锛岃€屾槸涓€涓椂浠ｇ殑鍩虹璁炬柦鈥斺€旂敱绀惧尯鍏卞悓瀹氫箟銆佸叡鍚岀淮鎶ゃ€佸叡鍚屾紨鍖栥€?        </p>
+          就像 HTTP 改变了信息的流动方式，AMCP 将改变 <strong>知识的积累方式</strong>。这不是一个公司的产品，而是一个时代的基础设施——由社区共同定义、共同维护、共同演化。
+        </p>
         <p class="en-text">
-          Just as HTTP changed how information flows, AMCP changes <strong>how knowledge accumulates</strong>. This is not a company's product 鈥?it's an era's infrastructure, defined, maintained, and evolved by the community together.
+          Just as HTTP changed how information flows, AMCP changes <strong>how knowledge accumulates</strong>. This is not a company's product — it's an era's infrastructure, defined, maintained, and evolved by the community together.
         </p>
       </div>
     </div>
@@ -992,61 +1000,61 @@ hr.organic {
 <section id="principles">
 <div class="section-inner">
   <div class="section-label reveal">
-    <span class="zh-text">02 鈥?鏍稿績浠峰€艰</span>
-    <span class="en-text">02 鈥?Core Values</span>
+    <span class="zh-text">02 — 核心价值观</span>
+    <span class="en-text">02 — Core Values</span>
   </div>
   <h2 class="section-title reveal reveal-delay-1">
-    <span class="zh-text">StepMind 鐨勪簲椤瑰師鍒?/span>
+    <span class="zh-text">StepMind 的五项原则</span>
     <span class="en-text">Five Principles of <em>StepMind</em></span>
   </h2>
   <div class="principles-grid">
     <div class="principle reveal">
       <div class="principle-num">P-01</div>
-      <div class="principle-name zh-text">娓愯繘鎬?/div>
+      <div class="principle-name zh-text">渐进性</div>
       <div class="principle-name en-text">Incrementalism</div>
       <div class="principle-name-en">Step-by-Step</div>
-      <div class="principle-desc zh-text">涓嶈拷姹備竴韫磋€屽氨鐨勫畬缇庯紝鑰屾槸閫氳繃灏忔蹇窇銆佹寔缁弽棣堬紝璁╁崗璁湪瀹炶返涓€愭鎴愮啛銆傛瘡涓増鏈兘鍚戝墠鍏煎锛屼繚闅滃凡鏈夋姇璧勬案涓嶆氮璐广€?/div>
-      <div class="principle-desc en-text">No pursuit of instant perfection. Small steps, fast feedback, letting the protocol mature through practice. Every version is backward-compatible 鈥?your investment is never wasted.</div>
+      <div class="principle-desc zh-text">不追求一蹴而就的完美，而是通过小步快跑、持续反馈，让协议在实践中逐步成熟。每个版本都向前兼容，保障已有投资永不浪费。</div>
+      <div class="principle-desc en-text">No pursuit of instant perfection. Small steps, fast feedback, letting the protocol mature through practice. Every version is backward-compatible — your investment is never wasted.</div>
     </div>
     <div class="principle reveal reveal-delay-1">
       <div class="principle-num">P-02</div>
-      <div class="principle-name zh-text">鏃犻檺杩涘寲</div>
+      <div class="principle-name zh-text">无限进化</div>
       <div class="principle-name en-text">Infinite Evolution</div>
       <div class="principle-name-en">Never Stop Growing</div>
-      <div class="principle-desc zh-text">鍗忚鏈韩蹇呴』鍏峰鑷垜婕旇繘鑳藉姏銆傞€氳繃鑳藉姏鎸囩汗銆佺増鏈崗鍟嗐€佹墿灞曟満鍒讹紝鍏佽鏂版妧鏈棤缂濊瀺鍏ワ紝鍗忚涓?AI 鍏卞悓鎴愰暱锛屾案鏃犵粓鐐广€?/div>
-      <div class="principle-desc en-text">The protocol must be capable of self-evolution. Capability fingerprints, version negotiation, and extension mechanisms let new technologies integrate seamlessly. The protocol grows with AI 鈥?no endpoint.</div>
+      <div class="principle-desc zh-text">协议本身必须具备自我演进能力。通过能力指纹、版本协商、扩展机制，允许新技术无缝融入，协议与 AI 共同成长，永无终点。</div>
+      <div class="principle-desc en-text">The protocol must be capable of self-evolution. Capability fingerprints, version negotiation, and extension mechanisms let new technologies integrate seamlessly. The protocol grows with AI — no endpoint.</div>
     </div>
     <div class="principle reveal reveal-delay-2">
       <div class="principle-num">P-03</div>
-      <div class="principle-name zh-text">寮€鏀句簰鎿嶄綔</div>
+      <div class="principle-name zh-text">开放互操作</div>
       <div class="principle-name en-text">Open Interoperability</div>
-      <div class="principle-name-en">Any AI 脳 Any Storage</div>
-      <div class="principle-desc zh-text">浠讳綍鍘傚晢銆佷换浣曟鏋躲€佷换浣曠‖浠讹紝鍙閬靛惊 AMCP 瑙勮寖锛屽嵆鍙簰鎿嶄綔銆傛垜浠弽瀵瑰皝闂敓鎬侊紝鎷ユ姳澶氭牱鎬э紝瑙嗗巶鍟嗛攣瀹氫负鍗忚澶辫触銆?/div>
-      <div class="principle-desc en-text">Any vendor, any framework, any hardware 鈥?if it follows AMCP, it interoperates. We oppose closed ecosystems, embrace diversity, and treat vendor lock-in as protocol failure.</div>
+      <div class="principle-name-en">Any AI × Any Storage</div>
+      <div class="principle-desc zh-text">任何厂商、任何框架、任何硬件，只要遵循 AMCP 规范，即可互操作。我们反对封闭生态，拥抱多样性，视厂商锁定为协议失败。</div>
+      <div class="principle-desc en-text">Any vendor, any framework, any hardware — if it follows AMCP, it interoperates. We oppose closed ecosystems, embrace diversity, and treat vendor lock-in as protocol failure.</div>
     </div>
     <div class="principle reveal">
       <div class="principle-num">P-04</div>
-      <div class="principle-name zh-text">鍒氭€ц鑼?/div>
+      <div class="principle-name zh-text">刚性规范</div>
       <div class="principle-name en-text">Rigorous Specification</div>
       <div class="principle-name-en">MUST / SHOULD / MAY</div>
-      <div class="principle-desc zh-text">鍗忚蹇呴』鏈夋槑纭殑 MUST/SHOULD/MAY 瀹氫箟锛屾湁寮哄埗鏍￠獙鍜岃繚瑙勫鐞嗘満鍒躲€傛煍鎬х害瀹氭槸鏂囨。锛屽垰鎬ц鑼冩墠鏄崗璁€傚彧鏈夊垰鎬ф墠鑳戒繚璇佺湡姝ｇ殑浜掓搷浣滄€с€?/div>
+      <div class="principle-desc zh-text">协议必须有明确的 MUST/SHOULD/MAY 定义，有强制校验和违规处理机制。柔性约定是文档，刚性规范才是协议。只有刚性才能保证真正的互操作性。</div>
       <div class="principle-desc en-text">Clear MUST/SHOULD/MAY definitions, mandatory validation, and violation handling. Soft agreements are documents; rigid specs are protocols. Only rigor guarantees true interoperability.</div>
     </div>
     <div class="principle reveal reveal-delay-1">
       <div class="principle-num">P-05</div>
-      <div class="principle-name zh-text">绀惧尯椹卞姩</div>
+      <div class="principle-name zh-text">社区驱动</div>
       <div class="principle-name en-text">Community-driven</div>
       <div class="principle-name-en">Owned by Everyone</div>
-      <div class="principle-desc zh-text">鍗忚涓嶅睘浜庝换浣曞崟涓€缁勭粐锛岃€屾槸鐢辩ぞ鍖哄叡鍚岀淮鎶ゃ€傚喅绛栬繃绋嬮€忔槑锛岃础鐚矾寰勬竻鏅帮紝璁╂瘡涓€涓汉閮芥湁鏈轰細鍙備笌濉戦€?AI 璁板繂鐨勬湭鏉ャ€?/div>
+      <div class="principle-desc zh-text">协议不属于任何单一组织，而是由社区共同维护。决策过程透明，贡献路径清晰，让每一个人都有机会参与塑造 AI 记忆的未来。</div>
       <div class="principle-desc en-text">The protocol belongs to no single organization. Community-maintained, transparent decisions, clear contribution paths. Everyone has a role in shaping the future of AI memory.</div>
     </div>
     <div class="principle reveal reveal-delay-2" style="background:var(--moss-light);border:1px solid var(--phosphor-dim)">
-      <div class="principle-num" style="color:var(--amber-soft)">鈭?/div>
-      <div class="principle-name zh-text" style="color:var(--amber)">闃惰穬涔濇€?/div>
+      <div class="principle-num" style="color:var(--amber-soft)">∞</div>
+      <div class="principle-name zh-text" style="color:var(--amber)">阶跃九思</div>
       <div class="principle-name en-text" style="color:var(--amber)">Nine Steps, Boundless Thought</div>
       <div class="principle-name-en" style="color:var(--amber-soft)">StepMind Philosophy</div>
-      <div class="principle-desc zh-text">鎬濊€冧笉鏄嚎鎬х殑锛岃繘鍖栦笉鏄粓鐐广€傛瘡涓€姝ユ€濊€冮兘瓒呰秺涓婁竴姝ワ紝姣忎竴娆＄Н绱兘寮€鍚柊鐨勫彲鑳姐€傝繖涓嶆槸鏂规硶璁猴紝杩欐槸瀛樺湪鏂瑰紡銆?/div>
-      <div class="principle-desc en-text">Thinking is not linear; evolution has no endpoint. Each step of thought transcends the last; each accumulation opens new possibilities. Not a methodology 鈥?a way of being.</div>
+      <div class="principle-desc zh-text">思考不是线性的，进化不是终点。每一步思考都超越上一步，每一次积累都开启新的可能。这不是方法论，这是存在方式。</div>
+      <div class="principle-desc en-text">Thinking is not linear; evolution has no endpoint. Each step of thought transcends the last; each accumulation opens new possibilities. Not a methodology — a way of being.</div>
     </div>
   </div>
 </div>
@@ -1057,74 +1065,74 @@ hr.organic {
 <div class="amcp-section">
 <div class="section-inner">
   <div class="section-label reveal">
-    <span class="zh-text">03 鈥?鏍稿績鎶€鏈?/span>
-    <span class="en-text">03 鈥?Core Technology</span>
+    <span class="zh-text">03 — 核心技术</span>
+    <span class="en-text">03 — Core Technology</span>
   </div>
   <h2 class="section-title reveal reveal-delay-1">
-    <span class="zh-text">AMCP锛欰I 璁板繂灞傜殑 <em>TCP/IP</em></span>
+    <span class="zh-text">AMCP：AI 记忆层的 <em>TCP/IP</em></span>
     <span class="en-text">AMCP: The <em>TCP/IP</em> of AI Memory</span>
   </h2>
   <p class="section-sub reveal reveal-delay-2">
-    <span class="zh-text">涓冨眰瀹屾暣鍗忚鏍堬紝浠庝簩杩涘埗甯у埌璇箟搴旂敤锛屾瘡灞傛湁鐙珛鐨勫垰鎬ц鑼冦€備换鎰?AI 脳 浠绘剰鏁版嵁搴擄紝涓€娆℃帴鍏ワ紝姘镐箙浜掓搷浣溿€?/span>
-    <span class="en-text">A complete 7-layer protocol stack, from binary frames to semantic applications, each layer with its own rigorous spec. Any AI 脳 Any DB 鈥?connect once, interoperate forever.</span>
+    <span class="zh-text">七层完整协议栈，从二进制帧到语义应用，每层有独立的刚性规范。任意 AI × 任意数据库，一次接入，永久互操作。</span>
+    <span class="en-text">A complete 7-layer protocol stack, from binary frames to semantic applications, each layer with its own rigorous spec. Any AI × Any DB — connect once, interoperate forever.</span>
   </p>
 
   <div class="layer-viz reveal">
     <div class="layer-item" style="--layer-c: #b388ff">
       <div class="layer-n">L7</div>
       <div class="layer-name-col">
-        <div class="layer-name-zh">璇箟搴旂敤灞?/div>
+        <div class="layer-name-zh">语义应用层</div>
         <div class="layer-name-en">Semantic Application</div>
       </div>
-      <div class="layer-desc-col">AMQL 鏌ヨ璇█ 路 QEF 杩涘寲淇″彿 路 SMP 宸ヤ綔娴?路 椤圭洰閫昏緫</div>
+      <div class="layer-desc-col">AMQL 查询语言 · QEF 进化信号 · SMP 工作流 · 项目逻辑</div>
     </div>
     <div class="layer-item" style="--layer-c: #80cbc4">
       <div class="layer-n">L6</div>
       <div class="layer-name-col">
-        <div class="layer-name-zh">璁板繂琛ㄨ揪灞?AMF</div>
+        <div class="layer-name-zh">记忆表达层 AMF</div>
         <div class="layer-name-en">Memory Representation</div>
       </div>
-      <div class="layer-desc-col">7 绉嶇煡璇嗙被鍨?路 缁撴瀯鍖栦笁鍏冪粍 路 琛板噺妯″瀷 路 鍐呭瀵诲潃</div>
+      <div class="layer-desc-col">7 种知识类型 · 结构化三元组 · 衰减模型 · 内容寻址</div>
     </div>
     <div class="layer-item" style="--layer-c: #f5c842">
       <div class="layer-n">L5</div>
       <div class="layer-name-col">
-        <div class="layer-name-zh">涓€鑷存€у眰</div>
+        <div class="layer-name-zh">一致性层</div>
         <div class="layer-name-en">Consistency</div>
       </div>
-      <div class="layer-desc-col">娣峰悎閫昏緫鏃堕挓 路 鍥犳灉鍏崇郴 路 鐘舵€佹満 路 鐗╃悊/閫昏緫/璇箟涓夊眰涓€鑷?/div>
+      <div class="layer-desc-col">混合逻辑时钟 · 因果关系 · 状态机 · 物理/逻辑/语义三层一致</div>
     </div>
     <div class="layer-item" style="--layer-c: #3dffa0">
       <div class="layer-n">L4</div>
       <div class="layer-name-col">
-        <div class="layer-name-zh">璺敱璋冨害灞?CSE</div>
+        <div class="layer-name-zh">路由调度层 CSE</div>
         <div class="layer-name-en">Routing & Scheduling</div>
       </div>
-      <div class="layer-desc-col">涓婁笅鏂囪皟搴﹀紩鎿?路 Memory ROI 路 AMQL 璺敱 路 绐楀彛鍒嗛厤</div>
+      <div class="layer-desc-col">上下文调度引擎 · Memory ROI · AMQL 路由 · 窗口分配</div>
     </div>
     <div class="layer-item" style="--layer-c: #ff8a65">
       <div class="layer-n">L3</div>
       <div class="layer-name-col">
-        <div class="layer-name-zh">浼犺緭鍙潬灞?/div>
+        <div class="layer-name-zh">传输可靠层</div>
         <div class="layer-name-en">Reliable Transport</div>
       </div>
-      <div class="layer-desc-col">50B 浜岃繘鍒跺抚 路 CRC-32C 路 AES-256-GCM 路 0x00FF 寮哄埗鏂紑</div>
+      <div class="layer-desc-col">50B 二进制帧 · CRC-32C · AES-256-GCM · 0x00FF 强制断开</div>
     </div>
     <div class="layer-item" style="--layer-c: #4fc3f7">
       <div class="layer-n">L2</div>
       <div class="layer-name-col">
-        <div class="layer-name-zh">鍒嗗竷寮忓瓨鍌ㄥ眰</div>
+        <div class="layer-name-zh">分布式存储层</div>
         <div class="layer-name-en">Distributed Storage</div>
       </div>
-      <div class="layer-desc-col">绔晶鐑瓨 路 杈圭紭鏆栧瓨 路 浜戠鍐峰瓨 路 Gossip 鍚屾</div>
+      <div class="layer-desc-col">端侧热存 · 边缘暖存 · 云端冷存 · Gossip 同步</div>
     </div>
     <div class="layer-item" style="--layer-c: #f48fb1">
       <div class="layer-n">L1</div>
       <div class="layer-name-col">
-        <div class="layer-name-zh">韬唤瀵诲潃灞?/div>
+        <div class="layer-name-zh">身份寻址层</div>
         <div class="layer-name-en">Identity & Addressing</div>
       </div>
-      <div class="layer-desc-col">amcp:// URI 路 鑳藉姏澹版槑 路 淇′换閿氱偣 路 璺ㄥ巶鍟嗚璇?/div>
+      <div class="layer-desc-col">amcp:// URI · 能力声明 · 信任锚点 · 跨厂商认证</div>
     </div>
   </div>
 
@@ -1132,149 +1140,149 @@ hr.organic {
   <div style="margin-top:32px;display:flex;align-items:center;gap:16px;padding:24px;border:1px solid var(--border);background:var(--moss-mid)" class="reveal">
     <div style="flex:1">
       <div style="font-family:var(--font-mono);font-size:10px;color:var(--phosphor);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:6px">
-        <span class="zh-text">瀹屾暣鍗忚瑙勮寖鏂囨。</span><span class="en-text">Full Protocol Specification</span>
+        <span class="zh-text">完整协议规范文档</span><span class="en-text">Full Protocol Specification</span>
       </div>
-      <div style="font-size:15px;color:var(--text-1)">AMCP v1.0.0 鈥?DRAFT-RFC-FINAL</div>
+      <div style="font-size:15px;color:var(--text-1)">AMCP v1.0.0 — DRAFT-RFC-FINAL</div>
       <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-3);margin-top:4px">
-        <span class="zh-text">涓冨眰瀹屾暣瑙勮寖 路 AMF鏍煎紡 路 AMQL璇█ 路 涓€鑷存€ф祴璇曞浠?路 浜岃繘鍒跺抚瀹氫箟</span>
-        <span class="en-text">7-layer full spec 路 AMF format 路 AMQL 路 Conformance test suite 路 Binary frame</span>
+        <span class="zh-text">七层完整规范 · AMF格式 · AMQL语言 · 一致性测试套件 · 二进制帧定义</span>
+        <span class="en-text">7-layer full spec · AMF format · AMQL · Conformance test suite · Binary frame</span>
       </div>
     </div>
     <a href="amcp-spec.html" style="font-family:var(--font-mono);font-size:11px;background:var(--phosphor);color:var(--ink);padding:12px 24px;text-decoration:none;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;border-radius:2px;flex-shrink:0;display:inline-block">
-      <span class="zh-text">闃呰瀹屾暣瑙勮寖 鈫?/span>
-      <span class="en-text">Read Full Spec 鈫?/span>
+      <span class="zh-text">阅读完整规范 →</span>
+      <span class="en-text">Read Full Spec →</span>
     </a>
   </div>
 
   <!-- Why AMCP tabs -->
   <div style="margin-top:60px">
   <div class="section-label reveal" style="margin-bottom:24px">
-    <span class="zh-text">瀵逛簬涓嶅悓鐨勪綘</span>
+    <span class="zh-text">对于不同的你</span>
     <span class="en-text">For Different You</span>
   </div>
   <div class="why-tabs reveal">
     <div class="why-tab active" onclick="switchTab(this,'dev')">
-      <span class="zh-text">寮€鍙戣€?/span><span class="en-text">Developer</span>
+      <span class="zh-text">开发者</span><span class="en-text">Developer</span>
     </div>
     <div class="why-tab" onclick="switchTab(this,'enterprise')">
-      <span class="zh-text">浼佷笟</span><span class="en-text">Enterprise</span>
+      <span class="zh-text">企业</span><span class="en-text">Enterprise</span>
     </div>
     <div class="why-tab" onclick="switchTab(this,'researcher')">
-      <span class="zh-text">鐮旂┒鑰?/span><span class="en-text">Researcher</span>
+      <span class="zh-text">研究者</span><span class="en-text">Researcher</span>
     </div>
     <div class="why-tab" onclick="switchTab(this,'user')">
-      <span class="zh-text">鏈€缁堢敤鎴?/span><span class="en-text">End User</span>
+      <span class="zh-text">最终用户</span><span class="en-text">End User</span>
     </div>
   </div>
   <div class="why-panels">
     <div class="why-panel active" id="tab-dev">
       <div class="why-text">
-        <p class="zh-text"><strong>涓€娆℃帴鍏ワ紝浠绘剰缁勫悎銆?/strong>瀹炵幇涓€濂?AMCP 瀹㈡埛绔紝鍗冲彲涓庝换鎰忕鍚堝崗璁殑 AI 妯″瀷鍜屽瓨鍌ㄥ悗绔€氫俊銆備笉鍐嶄负姣忎釜 AI 鍘傚晢鍐欎笉鍚岀殑閫傞厤灞傦紝涓嶅啀涓烘瘡涓悜閲忔暟鎹簱缁存姢涓嶅悓鐨?SDK銆?/p>
+        <p class="zh-text"><strong>一次接入，任意组合。</strong>实现一套 AMCP 客户端，即可与任意符合协议的 AI 模型和存储后端通信。不再为每个 AI 厂商写不同的适配层，不再为每个向量数据库维护不同的 SDK。</p>
         <p class="en-text"><strong>Connect once, mix freely.</strong> Implement one AMCP client and communicate with any protocol-compliant AI model and storage backend. No more vendor-specific adapters. No more managing multiple SDKs.</p>
-        <p class="zh-text">AMQL 鏌ヨ璇█绫诲瀷鍖栥€佸彲楠岃瘉锛屾瘮鑷劧璇█ prompt 鏇寸ǔ瀹氾紱AMF 鐭ヨ瘑鏍煎紡鑷甫鐗堟湰鍜屽洜鏋滃叧绯伙紝涓嶅啀鎷呭績璁板繂姹℃煋鍜屾暟鎹紓绉汇€?/p>
-        <p class="en-text">AMQL is typed and verifiable 鈥?more stable than natural language prompts. AMF knowledge format includes versioning and causality built-in, so no more memory pollution or data drift concerns.</p>
+        <p class="zh-text">AMQL 查询语言类型化、可验证，比自然语言 prompt 更稳定；AMF 知识格式自带版本和因果关系，不再担心记忆污染和数据漂移。</p>
+        <p class="en-text">AMQL is typed and verifiable — more stable than natural language prompts. AMF knowledge format includes versioning and causality built-in, so no more memory pollution or data drift concerns.</p>
       </div>
       <div class="why-points">
         <div class="why-point">
-          <div class="why-point-title zh-text">馃攲 鍗忚鍏煎鍗充簰鎿嶄綔</div>
-          <div class="why-point-title en-text">馃攲 Protocol compliance = interoperability</div>
-          <div class="why-point-desc zh-text">Claude銆丟PT銆丟emini鈥斺€旈兘璇村悓涓€绉嶈瑷€</div>
-          <div class="why-point-desc en-text">Claude, GPT, Gemini 鈥?all speak the same language</div>
+          <div class="why-point-title zh-text">🔌 协议兼容即互操作</div>
+          <div class="why-point-title en-text">🔌 Protocol compliance = interoperability</div>
+          <div class="why-point-desc zh-text">Claude、GPT、Gemini——都说同一种语言</div>
+          <div class="why-point-desc en-text">Claude, GPT, Gemini — all speak the same language</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">鈿?CSE 鑷姩璋冨害涓婁笅鏂?/div>
-          <div class="why-point-title en-text">鈿?CSE auto-schedules context</div>
-          <div class="why-point-desc zh-text">ROI 鎺掑簭鏇夸唬鎵嬪姩 prompt 宸ョ▼锛屾€ц兘鎻愬崌 3-10x</div>
-          <div class="why-point-desc en-text">ROI-ranked context replaces manual prompt engineering 鈥?3-10x performance gain</div>
+          <div class="why-point-title zh-text">⚡ CSE 自动调度上下文</div>
+          <div class="why-point-title en-text">⚡ CSE auto-schedules context</div>
+          <div class="why-point-desc zh-text">ROI 排序替代手动 prompt 工程，性能提升 3-10x</div>
+          <div class="why-point-desc en-text">ROI-ranked context replaces manual prompt engineering — 3-10x performance gain</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">馃洝锔?鍒氭€у崗璁姷寰℃紓绉?/div>
-          <div class="why-point-title en-text">馃洝锔?Rigid protocol prevents drift</div>
-          <div class="why-point-desc zh-text">MUST/SHOULD/MAY + 0x00FF 寮哄埗鏂紑锛屽崗璁繚瑙勪笉浼氭倓鎮勪紶鎾?/div>
-          <div class="why-point-desc en-text">MUST/SHOULD/MAY + 0x00FF forced disconnect 鈥?violations don't propagate silently</div>
+          <div class="why-point-title zh-text">🛡️ 刚性协议抵御漂移</div>
+          <div class="why-point-title en-text">🛡️ Rigid protocol prevents drift</div>
+          <div class="why-point-desc zh-text">MUST/SHOULD/MAY + 0x00FF 强制断开，协议违规不会悄悄传播</div>
+          <div class="why-point-desc en-text">MUST/SHOULD/MAY + 0x00FF forced disconnect — violations don't propagate silently</div>
         </div>
       </div>
     </div>
     <div class="why-panel" id="tab-enterprise">
       <div class="why-text">
-        <p class="zh-text"><strong>鎵撶牬鏁版嵁瀛ゅ矝锛屽缓绔嬩紒涓氱煡璇嗚祫浜с€?/strong>姣忎釜 AI 瀵硅瘽浜х敓鐨勭煡璇嗕笉鍐嶉殢浼氳瘽缁撴潫鑰屾秷澶憋紝鑰屾槸娌夋穩涓轰紒涓氱殑闀挎湡鏅哄姏璧勬湰鈥斺€斿彲杩芥函銆佸彲瀹¤銆佸彲璺ㄧ郴缁熷叡浜€?/p>
-        <p class="en-text"><strong>Break data silos. Build enterprise knowledge assets.</strong> Knowledge from every AI conversation no longer vanishes after the session 鈥?it becomes long-term intellectual capital: traceable, auditable, shareable across systems.</p>
-        <p class="zh-text">鍒嗗竷寮忓瓨鍌ㄥ眰鏀寔绔晶閮ㄧ讲锛屾晱鎰熺煡璇嗘案杩滀笉绂诲紑浼佷笟缃戠粶锛涜仈閭﹀悓姝ユ満鍒跺厑璁歌法閮ㄩ棬銆佽法瀛愬叕鍙哥殑鐭ヨ瘑娴佸姩锛屽悓鏃朵繚璇佹暟鎹富鏉冦€?/p>
-        <p class="en-text">Distributed storage supports edge deployment 鈥?sensitive knowledge never leaves your network. Federated sync enables cross-department knowledge flow while guaranteeing data sovereignty.</p>
+        <p class="zh-text"><strong>打破数据孤岛，建立企业知识资产。</strong>每个 AI 对话产生的知识不再随会话结束而消失，而是沉淀为企业的长期智力资本——可追溯、可审计、可跨系统共享。</p>
+        <p class="en-text"><strong>Break data silos. Build enterprise knowledge assets.</strong> Knowledge from every AI conversation no longer vanishes after the session — it becomes long-term intellectual capital: traceable, auditable, shareable across systems.</p>
+        <p class="zh-text">分布式存储层支持端侧部署，敏感知识永远不离开企业网络；联邦同步机制允许跨部门、跨子公司的知识流动，同时保证数据主权。</p>
+        <p class="en-text">Distributed storage supports edge deployment — sensitive knowledge never leaves your network. Federated sync enables cross-department knowledge flow while guaranteeing data sovereignty.</p>
       </div>
       <div class="why-points">
         <div class="why-point">
-          <div class="why-point-title zh-text">馃彚 鐭ヨ瘑姘镐笉涓㈠け</div>
-          <div class="why-point-title en-text">馃彚 Knowledge never lost</div>
-          <div class="why-point-desc zh-text">涓嶅彲鍙樹簨浠舵棩蹇楋紝瀹屾暣鐨勭煡璇嗗璁￠摼</div>
+          <div class="why-point-title zh-text">🏢 知识永不丢失</div>
+          <div class="why-point-title en-text">🏢 Knowledge never lost</div>
+          <div class="why-point-desc zh-text">不可变事件日志，完整的知识审计链</div>
           <div class="why-point-desc en-text">Immutable event log, complete knowledge audit chain</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">馃敀 鏁版嵁涓绘潈鏈変繚闅?/div>
-          <div class="why-point-title en-text">馃敀 Data sovereignty guaranteed</div>
-          <div class="why-point-desc zh-text">绔晶鍥哄寲 + project_scope 瀛楁绮剧‘鎺у埗鐭ヨ瘑鍙鑼冨洿</div>
+          <div class="why-point-title zh-text">🔒 数据主权有保障</div>
+          <div class="why-point-title en-text">🔒 Data sovereignty guaranteed</div>
+          <div class="why-point-desc zh-text">端侧固化 + project_scope 字段精确控制知识可见范围</div>
           <div class="why-point-desc en-text">Edge solidification + project_scope field for precise visibility control</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">馃搳 鍙噺鍖栫殑 AI 鎶曡祫鍥炴姤</div>
-          <div class="why-point-title en-text">馃搳 Measurable AI ROI</div>
-          <div class="why-point-desc zh-text">QEF 淇″彿閲忓寲绯荤粺杩涘寲鏁堢巼锛岀煡璇嗙Н绱湁鍙噺鍖栫殑鎸囨爣</div>
-          <div class="why-point-desc en-text">QEF signals quantify system evolution efficiency 鈥?measurable knowledge accumulation</div>
+          <div class="why-point-title zh-text">📊 可量化的 AI 投资回报</div>
+          <div class="why-point-title en-text">📊 Measurable AI ROI</div>
+          <div class="why-point-desc zh-text">QEF 信号量化系统进化效率，知识积累有可量化的指标</div>
+          <div class="why-point-desc en-text">QEF signals quantify system evolution efficiency — measurable knowledge accumulation</div>
         </div>
       </div>
     </div>
     <div class="why-panel" id="tab-researcher">
       <div class="why-text">
-        <p class="zh-text"><strong>寮€鏀惧崗璁紝寮€鏀剧爺绌躲€?/strong>AMCP 鐨勬瘡涓€灞傞兘鏄彲鏇挎崲鐨勬帴鍙ｏ紝鐮旂┒鑰呭彲浠ュ湪 L6 鏇挎崲 AMF 鏍煎紡鎺㈢储鏂扮殑鐭ヨ瘑琛ㄧず锛屽彲浠ュ湪 L4 鏇挎崲 CSE 绠楁硶鎺㈢储鏂扮殑妫€绱㈢瓥鐣ワ紝鍙互鍦?L5 鏇挎崲鍏辫瘑鏈哄埗鎺㈢储鏂扮殑涓€鑷存€фā鍨嬨€?/p>
+        <p class="zh-text"><strong>开放协议，开放研究。</strong>AMCP 的每一层都是可替换的接口，研究者可以在 L6 替换 AMF 格式探索新的知识表示，可以在 L4 替换 CSE 算法探索新的检索策略，可以在 L5 替换共识机制探索新的一致性模型。</p>
         <p class="en-text"><strong>Open protocol, open research.</strong> Every AMCP layer is a replaceable interface. Swap L6's AMF to explore new knowledge representations. Replace L4's CSE algorithm to try new retrieval strategies. Experiment with L5 consensus mechanisms for new consistency models.</p>
-        <p class="zh-text">鎵€鏈夊疄楠岀粨鏋滃彲浠ュ洖棣堢ぞ鍖猴紝鎴愪负涓嬩竴涓崗璁増鏈殑鎶€鏈熀纭€銆備綘鐨勭爺绌朵笉浼氬仠鐣欏湪璁烘枃閲岋紝鑰屾槸鐪熸钀藉叆鐢熶骇绾у熀纭€璁炬柦銆?/p>
-        <p class="en-text">All experimental results can be contributed back to the community, becoming the technical foundation for the next protocol version. Your research doesn't stay in papers 鈥?it enters production infrastructure.</p>
+        <p class="zh-text">所有实验结果可以回馈社区，成为下一个协议版本的技术基础。你的研究不会停留在论文里，而是真正落入生产级基础设施。</p>
+        <p class="en-text">All experimental results can be contributed back to the community, becoming the technical foundation for the next protocol version. Your research doesn't stay in papers — it enters production infrastructure.</p>
       </div>
       <div class="why-points">
         <div class="why-point">
-          <div class="why-point-title zh-text">馃И 涓冨眰鍏ㄩ儴鍙疄楠?/div>
-          <div class="why-point-title en-text">馃И All 7 layers are experimentable</div>
-          <div class="why-point-desc zh-text">鏇挎崲浠绘剰灞傝€屼笉褰卞搷鍏朵粬灞傦紝鐞嗘兂鐨勭爺绌跺钩鍙?/div>
-          <div class="why-point-desc en-text">Replace any layer without affecting others 鈥?ideal research platform</div>
+          <div class="why-point-title zh-text">🧪 七层全部可实验</div>
+          <div class="why-point-title en-text">🧪 All 7 layers are experimentable</div>
+          <div class="why-point-desc zh-text">替换任意层而不影响其他层，理想的研究平台</div>
+          <div class="why-point-desc en-text">Replace any layer without affecting others — ideal research platform</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">馃搻 鍥犳灉鏃堕挓渚涘垎鏋?/div>
-          <div class="why-point-title en-text">馃搻 Causal clock for analysis</div>
-          <div class="why-point-desc zh-text">瀹屾暣鐨勭煡璇嗗洜鏋滈摼锛屾槸鍒嗗竷寮?AI 鐮旂┒鐨勫ぉ鐒舵暟鎹泦</div>
-          <div class="why-point-desc en-text">Complete knowledge causal chains 鈥?natural dataset for distributed AI research</div>
+          <div class="why-point-title zh-text">📐 因果时钟供分析</div>
+          <div class="why-point-title en-text">📐 Causal clock for analysis</div>
+          <div class="why-point-desc zh-text">完整的知识因果链，是分布式 AI 研究的天然数据集</div>
+          <div class="why-point-desc en-text">Complete knowledge causal chains — natural dataset for distributed AI research</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">馃寪 鐮旂┒鐩磋揪鐢熶骇</div>
-          <div class="why-point-title en-text">馃寪 Research reaches production</div>
-          <div class="why-point-desc zh-text">閫氳繃 RFC 娴佺▼锛岀爺绌舵垚鏋滃彲杩涘叆姝ｅ紡鍗忚瑙勮寖</div>
+          <div class="why-point-title zh-text">🌐 研究直达生产</div>
+          <div class="why-point-title en-text">🌐 Research reaches production</div>
+          <div class="why-point-desc zh-text">通过 RFC 流程，研究成果可进入正式协议规范</div>
           <div class="why-point-desc en-text">Through RFC process, research findings can enter the official spec</div>
         </div>
       </div>
     </div>
     <div class="why-panel" id="tab-user">
       <div class="why-text">
-        <p class="zh-text"><strong>AI 缁堜簬鏈変簡鐪熸鐨勮蹇嗐€?/strong>涓嶅啀闇€瑕佹瘡娆″璇濋噸鏂拌В閲婁綘鐨勫亸濂姐€佷綘鐨勯」鐩€佷綘鐨勫喅绛栧巻鍙层€傚熀浜?AMCP 鐨?AI 宸ュ叿鑳藉鐪熸璁颁綇锛岀湡姝ｇН绱紝鐪熸鎴愪负浣犵殑闀挎湡浼欎即銆?/p>
+        <p class="zh-text"><strong>AI 终于有了真正的记忆。</strong>不再需要每次对话重新解释你的偏好、你的项目、你的决策历史。基于 AMCP 的 AI 工具能够真正记住，真正积累，真正成为你的长期伙伴。</p>
         <p class="en-text"><strong>AI finally truly remembers.</strong> No more re-explaining your preferences, projects, and decision history in every conversation. AMCP-based AI tools genuinely remember, genuinely accumulate, genuinely become your long-term partner.</p>
-        <p class="zh-text">鑰屼笖杩欎簺璁板繂涓嶈浠讳綍鍗曚竴鍘傚晢鍨勬柇鈥斺€斿畠浠睘浜庝綘锛屽彲浠ュ湪涓嶅悓 AI 宸ュ叿涔嬮棿杩佺Щ锛屾案杩滀笉浼氬洜涓烘崲浜嗕竴涓?AI 搴旂敤鑰屽け鍘汇€?/p>
-        <p class="en-text">And these memories aren't monopolized by any single vendor 鈥?they belong to you, portable across different AI tools. You'll never lose them just because you switched AI applications.</p>
+        <p class="zh-text">而且这些记忆不被任何单一厂商垄断——它们属于你，可以在不同 AI 工具之间迁移，永远不会因为换了一个 AI 应用而失去。</p>
+        <p class="en-text">And these memories aren't monopolized by any single vendor — they belong to you, portable across different AI tools. You'll never lose them just because you switched AI applications.</p>
       </div>
       <div class="why-points">
         <div class="why-point">
-          <div class="why-point-title zh-text">馃 鐪熸鐨勯暱鏈熻蹇?/div>
-          <div class="why-point-title en-text">馃 Genuine long-term memory</div>
-          <div class="why-point-desc zh-text">鐭ヨ瘑绉疮璺ㄥ璇濄€佽法宸ュ叿銆佽法鏃堕棿</div>
+          <div class="why-point-title zh-text">🧠 真正的长期记忆</div>
+          <div class="why-point-title en-text">🧠 Genuine long-term memory</div>
+          <div class="why-point-desc zh-text">知识积累跨对话、跨工具、跨时间</div>
           <div class="why-point-desc en-text">Knowledge accumulates across conversations, tools, and time</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">馃敁 璁板繂灞炰簬浣?/div>
-          <div class="why-point-title en-text">馃敁 Your memory, yours to keep</div>
-          <div class="why-point-desc zh-text">寮€鏀惧崗璁繚璇佽縼绉昏嚜鐢憋紝涓嶈浠讳綍骞冲彴閿佸畾</div>
-          <div class="why-point-desc en-text">Open protocol guarantees migration freedom 鈥?no platform lock-in</div>
+          <div class="why-point-title zh-text">🔓 记忆属于你</div>
+          <div class="why-point-title en-text">🔓 Your memory, yours to keep</div>
+          <div class="why-point-desc zh-text">开放协议保证迁移自由，不被任何平台锁定</div>
+          <div class="why-point-desc en-text">Open protocol guarantees migration freedom — no platform lock-in</div>
         </div>
         <div class="why-point">
-          <div class="why-point-title zh-text">馃搱 瓒婄敤瓒婅仾鏄?/div>
-          <div class="why-point-title en-text">馃搱 Smarter over time</div>
-          <div class="why-point-desc zh-text">QEF 杩涘寲淇″彿纭繚 AI 宸ュ叿鎸佺画鍚戝ソ鐨勬柟鍚戣凯浠?/div>
+          <div class="why-point-title zh-text">📈 越用越聪明</div>
+          <div class="why-point-title en-text">📈 Smarter over time</div>
+          <div class="why-point-desc zh-text">QEF 进化信号确保 AI 工具持续向好的方向迭代</div>
           <div class="why-point-desc en-text">QEF evolution signals ensure AI tools continuously iterate toward better outcomes</div>
         </div>
       </div>
@@ -1290,15 +1298,15 @@ hr.organic {
 <div class="roles-section">
 <div class="section-inner">
   <div class="section-label reveal">
-    <span class="zh-text">04 鈥?绀惧尯缁撴瀯</span>
-    <span class="en-text">04 鈥?Community Structure</span>
+    <span class="zh-text">04 — 社区结构</span>
+    <span class="en-text">04 — Community Structure</span>
   </div>
   <h2 class="section-title reveal reveal-delay-1">
-    <span class="zh-text">浣犲湪杩欓噷鐨?em>浣嶇疆</em></span>
+    <span class="zh-text">你在这里的<em>位置</em></span>
     <span class="en-text">Your <em>Place</em> Here</span>
   </h2>
   <p class="section-sub reveal reveal-delay-2">
-    <span class="zh-text">StepMind 閲囩敤鍒嗗眰娌荤悊妯″瀷锛屽吋椤炬晥鐜囦笌寮€鏀俱€傛棤璁轰綘鏄涓€娆℃帴瑙?AI 鍗忚锛岃繕鏄湪鏋勫缓鍒嗗竷寮忕郴缁燂紝閮芥湁浣犵殑浣嶇疆銆?/span>
+    <span class="zh-text">StepMind 采用分层治理模型，兼顾效率与开放。无论你是第一次接触 AI 协议，还是在构建分布式系统，都有你的位置。</span>
     <span class="en-text">StepMind uses a layered governance model balancing efficiency with openness. Whether you're new to AI protocols or building distributed systems, there's a place for you.</span>
   </p>
   <div class="roles-orbit">
@@ -1307,12 +1315,12 @@ hr.organic {
         <circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="1.2"/>
         <path d="M8 40C8 32 15 28 24 28C33 28 40 32 40 40" stroke="currentColor" stroke-width="1.2"/>
       </svg>
-      <div class="role-title-zh zh-text">鐢ㄦ埛</div>
+      <div class="role-title-zh zh-text">用户</div>
       <div class="role-title-zh en-text">User</div>
-      <div class="role-title-en">User 路 鐢ㄦ埛</div>
-      <div class="role-desc zh-text">浣跨敤鍩轰簬 AMCP 鐨勮蒋浠舵垨鏈嶅姟锛屾彁渚涚湡瀹炵殑浣跨敤鍙嶉銆備綘鐨勬瘡涓€涓?issue 閮芥槸鍗忚杩涘寲鐨勫吇鍒嗐€?/div>
+      <div class="role-title-en">User · 用户</div>
+      <div class="role-desc zh-text">使用基于 AMCP 的软件或服务，提供真实的使用反馈。你的每一个 issue 都是协议进化的养分。</div>
       <div class="role-desc en-text">Use AMCP-based software or services and provide real usage feedback. Every issue you file nourishes the protocol's evolution.</div>
-      <div class="role-how"><strong class="zh-text">濡備綍寮€濮嬶細</strong><strong class="en-text">How to start:</strong> <span class="zh-text">璇曠敤鍙傝€冨疄鐜帮紝鎻愪氦浣犵殑绗竴涓?Issue</span><span class="en-text">Try the reference implementation, file your first Issue</span></div>
+      <div class="role-how"><strong class="zh-text">如何开始：</strong><strong class="en-text">How to start:</strong> <span class="zh-text">试用参考实现，提交你的第一个 Issue</span><span class="en-text">Try the reference implementation, file your first Issue</span></div>
     </div>
     <div class="role-card reveal reveal-delay-1" style="--role-c: var(--phosphor)">
       <svg class="role-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1320,23 +1328,23 @@ hr.organic {
         <path d="M32 8L40 16L32 24" stroke="currentColor" stroke-width="1.2"/>
         <path d="M28 6L20 42" stroke="currentColor" stroke-width="1.2"/>
       </svg>
-      <div class="role-title-zh zh-text">璐＄尞鑰?/div>
+      <div class="role-title-zh zh-text">贡献者</div>
       <div class="role-title-zh en-text">Contributor</div>
-      <div class="role-title-en">Contributor 路 璐＄尞鑰?/div>
-      <div class="role-desc zh-text">鎻愪氦浠ｇ爜銆佹枃妗ｃ€佺炕璇戙€佹祴璇曠敤渚嬫垨妗堜緥鐮旂┒銆傞€夋嫨涓€涓?good first issue 寮€濮嬶紝绀惧尯浼氬叏绋嬫敮鎸佷綘銆?/div>
-      <div class="role-desc en-text">Submit code, docs, translations, test cases, or case studies. Pick a good first issue to start 鈥?the community fully supports you.</div>
-      <div class="role-how"><strong class="zh-text">濡備綍鑾峰緱锛?/strong><strong class="en-text">How to earn:</strong> <span class="zh-text">閫氳繃 Pull Request 鍚堝苟锛岃嚜鍔ㄨ幏寰楄础鐚€呰韩浠?/span><span class="en-text">Merge a Pull Request 鈥?contributor status granted automatically</span></div>
+      <div class="role-title-en">Contributor · 贡献者</div>
+      <div class="role-desc zh-text">提交代码、文档、翻译、测试用例或案例研究。选择一个 good first issue 开始，社区会全程支持你。</div>
+      <div class="role-desc en-text">Submit code, docs, translations, test cases, or case studies. Pick a good first issue to start — the community fully supports you.</div>
+      <div class="role-how"><strong class="zh-text">如何获得：</strong><strong class="en-text">How to earn:</strong> <span class="zh-text">通过 Pull Request 合并，自动获得贡献者身份</span><span class="en-text">Merge a Pull Request — contributor status granted automatically</span></div>
     </div>
     <div class="role-card reveal" style="--role-c: var(--amber)">
       <svg class="role-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M24 8L28 18H40L30 24L34 36L24 30L14 36L18 24L8 18H20L24 8Z" stroke="currentColor" stroke-width="1.2"/>
       </svg>
-      <div class="role-title-zh zh-text">缁存姢鑰?/div>
+      <div class="role-title-zh zh-text">维护者</div>
       <div class="role-title-zh en-text">Maintainer</div>
-      <div class="role-title-en">Maintainer 路 缁存姢鑰?/div>
-      <div class="role-desc zh-text">璐熻矗鐗瑰畾妯″潡鐨勪唬鐮佸鏌ャ€佸悎骞朵笌鐗堟湰鍙戝竷銆傛繁搴︾啛鎮変唬鐮佸簱鍚庯紝鐢辨牳蹇冨洟闃熼個璇锋垨閫氳繃绀惧尯閫変妇浜х敓銆?/div>
+      <div class="role-title-en">Maintainer · 维护者</div>
+      <div class="role-desc zh-text">负责特定模块的代码审查、合并与版本发布。深度熟悉代码库后，由核心团队邀请或通过社区选举产生。</div>
       <div class="role-desc en-text">Own code review, merging, and releases for specific modules. Invited by core team or elected by community after deep familiarity with the codebase.</div>
-      <div class="role-how"><strong class="zh-text">濡備綍鑾峰緱锛?/strong><strong class="en-text">How to earn:</strong> <span class="zh-text">鎸佺画璐＄尞鏌愭ā鍧?6 涓湀浠ヤ笂锛屾垨鐢辨牳蹇冨洟闃熸彁鍚?/span><span class="en-text">6+ months of sustained module contribution, or core team nomination</span></div>
+      <div class="role-how"><strong class="zh-text">如何获得：</strong><strong class="en-text">How to earn:</strong> <span class="zh-text">持续贡献某模块 6 个月以上，或由核心团队提名</span><span class="en-text">6+ months of sustained module contribution, or core team nomination</span></div>
     </div>
     <div class="role-card reveal reveal-delay-1" style="--role-c: var(--rust)">
       <svg class="role-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1347,12 +1355,12 @@ hr.organic {
         <line x1="8" y1="24" x2="14" y2="24" stroke="currentColor" stroke-width="1.2"/>
         <line x1="34" y1="24" x2="40" y2="24" stroke="currentColor" stroke-width="1.2"/>
       </svg>
-      <div class="role-title-zh zh-text">鏍稿績鍥㈤槦 / TSC</div>
+      <div class="role-title-zh zh-text">核心团队 / TSC</div>
       <div class="role-title-zh en-text">Core Team / TSC</div>
       <div class="role-title-en">Core Team / TSC</div>
-      <div class="role-desc zh-text">璐熻矗鍗忚鏁翠綋婕旇繘銆佺ぞ鍖烘不鐞嗕笌閲嶅ぇ鍐崇瓥銆傛妧鏈洃鐫ｅ鍛樹細锛圱SC锛夊鐞嗘妧鏈簤璁€佸埗瀹?Roadmap锛屼换鏈熷埗锛屽叕寮€閫変妇銆?/div>
+      <div class="role-desc zh-text">负责协议整体演进、社区治理与重大决策。技术监督委员会（TSC）处理技术争议、制定 Roadmap，任期制，公开选举。</div>
       <div class="role-desc en-text">Responsible for overall protocol evolution, community governance, and major decisions. TSC handles technical disputes and roadmap. Term-based, publicly elected.</div>
-      <div class="role-how"><strong class="zh-text">濡備綍鑾峰緱锛?/strong><strong class="en-text">How to earn:</strong> <span class="zh-text">鍒涘鎴愬憳鎻愬悕锛屾垨闀挎湡璐＄尞鍚庡弬涓庡勾搴﹂€変妇</span><span class="en-text">Founding member nomination, or run in annual election after sustained contribution</span></div>
+      <div class="role-how"><strong class="zh-text">如何获得：</strong><strong class="en-text">How to earn:</strong> <span class="zh-text">创始成员提名，或长期贡献后参与年度选举</span><span class="en-text">Founding member nomination, or run in annual election after sustained contribution</span></div>
     </div>
   </div>
 </div>
@@ -1364,28 +1372,28 @@ hr.organic {
 <div class="journey-section">
 <div class="section-inner">
   <div class="section-label reveal">
-    <span class="zh-text">05 鈥?璐＄尞璺緞</span>
-    <span class="en-text">05 鈥?Contribution Journey</span>
+    <span class="zh-text">05 — 贡献路径</span>
+    <span class="en-text">05 — Contribution Journey</span>
   </div>
   <h2 class="section-title reveal reveal-delay-1">
-    <span class="zh-text">浠庣涓€姝ュ埌<em>鏃犻檺杩?/em></span>
+    <span class="zh-text">从第一步到<em>无限远</em></span>
     <span class="en-text">From First Step to <em>Infinity</em></span>
   </h2>
   <div class="journey-steps">
     <div class="journey-step reveal">
       <div class="step-dot">01</div>
       <div class="step-content">
-        <div class="step-title zh-text">鏂版墜璧锋</div>
+        <div class="step-title zh-text">新手起步</div>
         <div class="step-title en-text">Getting Started</div>
         <div class="step-title-en">Newcomer</div>
         <ul class="step-items">
-          <li class="zh-text">闃呰 AMCP v1.0 鍗忚瑙勮寖锛岀悊瑙ｄ竷灞傛ā鍨?/li>
+          <li class="zh-text">阅读 AMCP v1.0 协议规范，理解七层模型</li>
           <li class="en-text">Read AMCP v1.0 spec, understand the 7-layer model</li>
-          <li class="zh-text">杩愯鍙傝€冨疄鐜扮ず渚嬶紝鎰熷彈鍗忚鐨勫疄闄呮晥鏋?/li>
+          <li class="zh-text">运行参考实现示例，感受协议的实际效果</li>
           <li class="en-text">Run reference implementation examples, feel the protocol in action</li>
-          <li class="zh-text">鍦?GitHub Discussions 鎻愬嚭浣犵殑绗竴涓棶棰樻垨鎯虫硶</li>
+          <li class="zh-text">在 GitHub Discussions 提出你的第一个问题或想法</li>
           <li class="en-text">Post your first question or idea in GitHub Discussions</li>
-          <li class="zh-text">鍙備笌缈昏瘧銆佹枃妗ｆ敼杩涖€佸崥瀹㈠垎浜?/li>
+          <li class="zh-text">参与翻译、文档改进、博客分享</li>
           <li class="en-text">Contribute translations, docs improvements, blog posts</li>
         </ul>
       </div>
@@ -1393,17 +1401,17 @@ hr.organic {
     <div class="journey-step reveal reveal-delay-1">
       <div class="step-dot">02</div>
       <div class="step-content">
-        <div class="step-title zh-text">浠ｇ爜璐＄尞</div>
+        <div class="step-title zh-text">代码贡献</div>
         <div class="step-title en-text">Code Contribution</div>
         <div class="step-title-en">Contributor</div>
         <ul class="step-items">
-          <li class="zh-text">閫夋嫨鏍囪涓?<code style="color:var(--phosphor);font-family:var(--font-mono);font-size:12px">good first issue</code> 鐨勪换鍔″紑濮?/li>
+          <li class="zh-text">选择标记为 <code style="color:var(--phosphor);font-family:var(--font-mono);font-size:12px">good first issue</code> 的任务开始</li>
           <li class="en-text">Pick a task labeled <code style="color:var(--phosphor);font-family:var(--font-mono);font-size:12px">good first issue</code> to start</li>
-          <li class="zh-text">瀹炵幇 AMCP Level-1 涓€鑷存€ф祴璇曚腑鐨勬煇涓€椤?/li>
+          <li class="zh-text">实现 AMCP Level-1 一致性测试中的某一项</li>
           <li class="en-text">Implement one of the AMCP Level-1 conformance tests</li>
-          <li class="zh-text">涓烘柊璇█娣诲姞 SDK 鏀寔锛圥ython/Go/Rust/JS/Java锛?/li>
+          <li class="zh-text">为新语言添加 SDK 支持（Python/Go/Rust/JS/Java）</li>
           <li class="en-text">Add SDK support for a new language (Python/Go/Rust/JS/Java)</li>
-          <li class="zh-text">鎻愪氦 Pull Request锛屽畬鎴?review 娴佺▼锛岃幏寰楄础鐚€呰韩浠?/li>
+          <li class="zh-text">提交 Pull Request，完成 review 流程，获得贡献者身份</li>
           <li class="en-text">Submit Pull Request, complete review, earn Contributor status</li>
         </ul>
       </div>
@@ -1411,15 +1419,15 @@ hr.organic {
     <div class="journey-step reveal reveal-delay-2">
       <div class="step-dot">03</div>
       <div class="step-content">
-        <div class="step-title zh-text">娣卞害鍙備笌</div>
+        <div class="step-title zh-text">深度参与</div>
         <div class="step-title en-text">Deep Engagement</div>
         <div class="step-title-en">Maintainer</div>
         <ul class="step-items">
-          <li class="zh-text">鎴愪负鐗瑰畾妯″潡锛堝 AMF 鏍煎紡瑙ｆ瀽鍣ㄣ€丆SE 寮曟搸锛夌殑缁存姢鑰?/li>
+          <li class="zh-text">成为特定模块（如 AMF 格式解析器、CSE 引擎）的维护者</li>
           <li class="en-text">Become maintainer of a specific module (AMF parser, CSE engine, etc.)</li>
-          <li class="zh-text">涓诲鏌愪釜瀛樺偍閫傞厤鍣ㄧ殑寮€鍙戯紙Pinecone/Weaviate/PostgreSQL锛?/li>
+          <li class="zh-text">主导某个存储适配器的开发（Pinecone/Weaviate/PostgreSQL）</li>
           <li class="en-text">Lead development of a storage adapter (Pinecone/Weaviate/PostgreSQL)</li>
-          <li class="zh-text">鍙備笌姣忔湀绀惧尯鍚屾浼氳锛屽奖鍝嶆妧鏈柟鍚?/li>
+          <li class="zh-text">参与每月社区同步会议，影响技术方向</li>
           <li class="en-text">Join monthly community sync meetings, influence technical direction</li>
         </ul>
       </div>
@@ -1427,26 +1435,26 @@ hr.organic {
     <div class="journey-step reveal">
       <div class="step-dot">04</div>
       <div class="step-content">
-        <div class="step-title zh-text">寮曢鍗忚</div>
+        <div class="step-title zh-text">引领协议</div>
         <div class="step-title en-text">Leading the Protocol</div>
         <div class="step-title-en">Core / TSC</div>
         <ul class="step-items">
-          <li class="zh-text">閫氳繃 RFC 娴佺▼鎻愬嚭鍗忚鏂扮壒鎬э紝鎺ㄥ姩杩涘叆姝ｅ紡瑙勮寖</li>
+          <li class="zh-text">通过 RFC 流程提出协议新特性，推动进入正式规范</li>
           <li class="en-text">Propose new protocol features through RFC process, push into official spec</li>
-          <li class="zh-text">鍙備笌 TSC 鎶曠エ锛岃鍐虫妧鏈簤璁紝鍒跺畾骞村害 Roadmap</li>
+          <li class="zh-text">参与 TSC 投票，裁决技术争议，制定年度 Roadmap</li>
           <li class="en-text">Participate in TSC voting, resolve technical disputes, shape the annual Roadmap</li>
-          <li class="zh-text">浠ｈ〃 StepMind 绀惧尯鍙備笌 ISO/IEC 绛夎涓氭爣鍑嗙粍缁?/li>
+          <li class="zh-text">代表 StepMind 社区参与 ISO/IEC 等行业标准组织</li>
           <li class="en-text">Represent StepMind community in ISO/IEC and other standards bodies</li>
         </ul>
       </div>
     </div>
     <div class="journey-step reveal reveal-delay-1">
-      <div class="step-dot">鈭?/div>
+      <div class="step-dot">∞</div>
       <div class="step-content">
-        <div class="step-title" style="color:var(--amber)">鏃犻檺杩涘寲</div>
+        <div class="step-title" style="color:var(--amber)">无限进化</div>
         <div class="step-title-en">Infinite Evolution</div>
         <ul class="step-items">
-          <li class="zh-text">鍗忚娌℃湁缁堢偣锛岃础鐚病鏈変笂闄愩€?em style="color:var(--phosphor)">闃惰穬涔濇€濓紝鏃犻檺杩涘寲銆?/em></li>
+          <li class="zh-text">协议没有终点，贡献没有上限。<em style="color:var(--phosphor)">阶跃九思，无限进化。</em></li>
           <li class="en-text">The protocol has no endpoint, contribution has no ceiling. <em style="color:var(--phosphor)">Nine Steps, Infinite Evolution.</em></li>
         </ul>
       </div>
@@ -1461,87 +1469,87 @@ hr.organic {
 <div class="roadmap-section">
 <div class="section-inner">
   <div class="section-label reveal">
-    <span class="zh-text">06 鈥?鎶€鏈矾绾垮浘</span>
-    <span class="en-text">06 鈥?Technical Roadmap</span>
+    <span class="zh-text">06 — 技术路线图</span>
+    <span class="en-text">06 — Technical Roadmap</span>
   </div>
   <h2 class="section-title reveal reveal-delay-1">
-    <span class="zh-text">2026 鈥?2028 鍙?em>浠ュ悗</em></span>
-    <span class="en-text">2026 鈥?2028 and <em>Beyond</em></span>
+    <span class="zh-text">2026 — 2028 及<em>以后</em></span>
+    <span class="en-text">2026 — 2028 and <em>Beyond</em></span>
   </h2>
   <div class="roadmap-timeline">
     <div class="phase reveal">
-      <div class="phase-label zh-text">闃舵涓€</div>
+      <div class="phase-label zh-text">阶段一</div>
       <div class="phase-label en-text">Phase One</div>
-      <div class="phase-period">2026 Q2鈥換3</div>
-      <div class="phase-title zh-text">鍗忚濂犲熀</div>
+      <div class="phase-period">2026 Q2–Q3</div>
+      <div class="phase-title zh-text">协议奠基</div>
       <div class="phase-title en-text">Foundation</div>
       <ul class="phase-items">
-        <li class="zh-text">AMCP v1.0 姝ｅ紡瑙勮寖鍙戝竷</li>
+        <li class="zh-text">AMCP v1.0 正式规范发布</li>
         <li class="en-text">AMCP v1.0 official spec released</li>
-        <li class="zh-text">Go + Python 鍙傝€冨疄鐜板紑婧?/li>
+        <li class="zh-text">Go + Python 参考实现开源</li>
         <li class="en-text">Go + Python reference implementation open-sourced</li>
-        <li class="zh-text">amcp-bridge 鍙傝€冨疄鐜板彂甯冿紙鍏煎涓绘祦 AI 宸ュ叿锛?/li>
+        <li class="zh-text">amcp-bridge 参考实现发布（兼容主流 AI 工具）</li>
         <li class="en-text">amcp-bridge reference impl released (compatible with major AI tools)</li>
-        <li class="zh-text">docs.stepmind.org 涓婄嚎</li>
+        <li class="zh-text">docs.stepmind.org 上线</li>
         <li class="en-text">docs.stepmind.org launches</li>
-        <li class="zh-text">Level-1 涓€鑷存€ф祴璇曞浠?/li>
+        <li class="zh-text">Level-1 一致性测试套件</li>
         <li class="en-text">Level-1 conformance test suite</li>
       </ul>
     </div>
     <div class="phase reveal reveal-delay-1">
-      <div class="phase-label zh-text">闃舵浜?/div>
+      <div class="phase-label zh-text">阶段二</div>
       <div class="phase-label en-text">Phase Two</div>
-      <div class="phase-period">2026 Q4 鈥?2027 Q2</div>
-      <div class="phase-title zh-text">鐢熸€佹墿灞?/div>
+      <div class="phase-period">2026 Q4 – 2027 Q2</div>
+      <div class="phase-title zh-text">生态扩展</div>
       <div class="phase-title en-text">Ecosystem</div>
       <ul class="phase-items">
         <li class="zh-text">Java/JS/Rust/C++ SDK</li>
         <li class="en-text">Java/JS/Rust/C++ SDKs</li>
-        <li class="zh-text">Pinecone / Weaviate / Chroma 閫傞厤</li>
+        <li class="zh-text">Pinecone / Weaviate / Chroma 适配</li>
         <li class="en-text">Pinecone / Weaviate / Chroma adapters</li>
-        <li class="zh-text">AMQL 鏌ヨ浼樺寲鍣?/li>
+        <li class="zh-text">AMQL 查询优化器</li>
         <li class="en-text">AMQL query optimizer</li>
-        <li class="zh-text">绀惧尯鎻掍欢鐢熸€佸ぇ璧?/li>
+        <li class="zh-text">社区插件生态大赛</li>
         <li class="en-text">Community plugin hackathon</li>
-        <li class="zh-text">Level-2 涓€鑷存€ф祴璇曞浠?/li>
+        <li class="zh-text">Level-2 一致性测试套件</li>
         <li class="en-text">Level-2 conformance test suite</li>
       </ul>
     </div>
     <div class="phase reveal reveal-delay-2">
-      <div class="phase-label zh-text">闃舵涓?/div>
+      <div class="phase-label zh-text">阶段三</div>
       <div class="phase-label en-text">Phase Three</div>
-      <div class="phase-period">2027 Q3 鈥?2028 Q1</div>
-      <div class="phase-title zh-text">浼佷笟绾у寮?/div>
+      <div class="phase-period">2027 Q3 – 2028 Q1</div>
+      <div class="phase-title zh-text">企业级增强</div>
       <div class="phase-title en-text">Enterprise</div>
       <ul class="phase-items">
-        <li class="zh-text">ABAC 缁嗙矑搴﹁闂帶鍒?/li>
+        <li class="zh-text">ABAC 细粒度访问控制</li>
         <li class="en-text">ABAC fine-grained access control</li>
-        <li class="zh-text">璺ㄧ粍缁囪仈閭﹁蹇嗗叡浜?/li>
+        <li class="zh-text">跨组织联邦记忆共享</li>
         <li class="en-text">Cross-org federated memory sharing</li>
-        <li class="zh-text">澶氭柟闅愮璁＄畻闆嗘垚</li>
+        <li class="zh-text">多方隐私计算集成</li>
         <li class="en-text">Multi-party privacy computing</li>
-        <li class="zh-text">AMCP 璁よ瘉璁″垝鍚姩</li>
+        <li class="zh-text">AMCP 认证计划启动</li>
         <li class="en-text">AMCP certification program launch</li>
-        <li class="zh-text">Level-3 涓€鑷存€ф祴璇曞浠?/li>
+        <li class="zh-text">Level-3 一致性测试套件</li>
         <li class="en-text">Level-3 conformance test suite</li>
       </ul>
     </div>
     <div class="phase reveal reveal-delay-3" style="background:var(--moss-light)">
-      <div class="phase-label zh-text">闃舵鍥?/div>
+      <div class="phase-label zh-text">阶段四</div>
       <div class="phase-label en-text">Phase Four</div>
       <div class="phase-period">2028+</div>
       <div class="phase-title" style="color:var(--amber)">
-        <span class="zh-text">琛屼笟鏍囧噯 脳 鏃犻檺杩涘寲</span>
-        <span class="en-text">Industry Standard 脳 Infinite Evolution</span>
+        <span class="zh-text">行业标准 × 无限进化</span>
+        <span class="en-text">Industry Standard × Infinite Evolution</span>
       </div>
       <ul class="phase-items">
-        <li class="zh-text">鑱斿悎涓昏 AI 鍘傚晢鎴愮珛 AMCP 鏍囧噯鑱旂洘</li>
+        <li class="zh-text">联合主要 AI 厂商成立 AMCP 标准联盟</li>
         <li class="en-text">Co-found AMCP Standards Alliance with major AI vendors</li>
-        <li class="zh-text">鎺ㄥ姩绾冲叆 ISO/IEC 鍥介檯鏍囧噯</li>
+        <li class="zh-text">推动纳入 ISO/IEC 国际标准</li>
         <li class="en-text">Drive adoption as ISO/IEC international standard</li>
-        <li class="zh-text">AMCP v2.0锛氱缁忕鍙疯蹇?/li>
+        <li class="zh-text">AMCP v2.0：神经符号记忆</li>
         <li class="en-text">AMCP v2.0: Neuro-symbolic memory</li>
-        <li class="zh-text">鍙井鍒嗘绱笌鐭ヨ瘑鎺ㄧ悊</li>
+        <li class="zh-text">可微分检索与知识推理</li>
         <li class="en-text">Differentiable retrieval & knowledge reasoning</li>
       </ul>
     </div>
@@ -1555,52 +1563,52 @@ hr.organic {
 <div class="gov-section">
 <div class="section-inner">
   <div class="section-label reveal">
-    <span class="zh-text">07 鈥?娌荤悊缁撴瀯</span>
-    <span class="en-text">07 鈥?Governance</span>
+    <span class="zh-text">07 — 治理结构</span>
+    <span class="en-text">07 — Governance</span>
   </div>
   <h2 class="section-title reveal reveal-delay-1">
-    <span class="zh-text">閫忔槑銆佸彲淇°€?em>绀惧尯椹卞姩</em></span>
+    <span class="zh-text">透明、可信、<em>社区驱动</em></span>
     <span class="en-text">Transparent, Trustworthy, <em>Community-Driven</em></span>
   </h2>
   <div class="gov-grid">
     <div class="gov-left reveal">
       <p style="font-size:15px;color:var(--text-2);margin-bottom:24px;line-height:1.8">
-        <span class="zh-text">AMCP 鍗忚鐨勫喅绛栬繃绋嬪畬鍏ㄩ€忔槑銆傞噸澶у彉鏇撮€氳繃 RFC 娴佺▼鍏紑璁ㄨ锛屾墍鏈変細璁邯瑕佸拰鎶曠エ缁撴灉瀛樻。鍏紑锛屼换浣曚汉閮藉彲浠ユ煡闃呫€?/span>
+        <span class="zh-text">AMCP 协议的决策过程完全透明。重大变更通过 RFC 流程公开讨论，所有会议纪要和投票结果存档公开，任何人都可以查阅。</span>
         <span class="en-text">AMCP's decision-making is fully transparent. Major changes go through open RFC process, all meeting notes and voting results are archived publicly for anyone to review.</span>
       </p>
       <div class="gov-flow">
         <div class="gov-tier">
           <div>
-            <div class="gov-tier-name zh-text">鐢ㄦ埛绀惧尯</div>
+            <div class="gov-tier-name zh-text">用户社区</div>
             <div class="gov-tier-name en-text">User Community</div>
-            <div class="gov-tier-en">Issues 路 Discussions 路 Feedback</div>
+            <div class="gov-tier-en">Issues · Discussions · Feedback</div>
           </div>
           <div class="gov-tier-tag">Open</div>
         </div>
-        <div class="gov-connector">鈫?/div>
+        <div class="gov-connector">↓</div>
         <div class="gov-tier">
           <div>
-            <div class="gov-tier-name zh-text">璐＄尞鑰?/div>
+            <div class="gov-tier-name zh-text">贡献者</div>
             <div class="gov-tier-name en-text">Contributors</div>
-            <div class="gov-tier-en">Pull Requests 路 Code 路 Docs</div>
+            <div class="gov-tier-en">Pull Requests · Code · Docs</div>
           </div>
           <div class="gov-tier-tag">Open</div>
         </div>
-        <div class="gov-connector">鈫?/div>
+        <div class="gov-connector">↓</div>
         <div class="gov-tier">
           <div>
-            <div class="gov-tier-name zh-text">缁存姢鑰?/div>
+            <div class="gov-tier-name zh-text">维护者</div>
             <div class="gov-tier-name en-text">Maintainers</div>
-            <div class="gov-tier-en">Review 路 Merge 路 Release</div>
+            <div class="gov-tier-en">Review · Merge · Release</div>
           </div>
           <div class="gov-tier-tag">Elected</div>
         </div>
-        <div class="gov-connector">鈫?/div>
+        <div class="gov-connector">↓</div>
         <div class="gov-tier" style="border-color:var(--border-hi)">
           <div>
-            <div class="gov-tier-name zh-text">鏍稿績鍥㈤槦 鈫?TSC</div>
-            <div class="gov-tier-name en-text">Core Team 鈫?TSC</div>
-            <div class="gov-tier-en">Roadmap 路 Major decisions 路 Disputes</div>
+            <div class="gov-tier-name zh-text">核心团队 ↔ TSC</div>
+            <div class="gov-tier-name en-text">Core Team ↔ TSC</div>
+            <div class="gov-tier-en">Roadmap · Major decisions · Disputes</div>
           </div>
           <div class="gov-tier-tag" style="border-color:var(--amber);color:var(--amber)">Term</div>
         </div>
@@ -1609,29 +1617,29 @@ hr.organic {
     <div class="gov-right reveal reveal-delay-1">
       <div class="gov-principles">
         <div class="gov-principle">
-          <div class="gov-principle-title zh-text">RFC 鍐崇瓥娴佺▼</div>
+          <div class="gov-principle-title zh-text">RFC 决策流程</div>
           <div class="gov-principle-title en-text">RFC Decision Process</div>
-          <div class="gov-principle-desc zh-text">浠讳綍浜哄彲鎻愪氦 RFC锛堝緛姹傛剰瑙佺锛夈€傚叕绀烘湡 鈮?14 澶╋紝TSC 鏈€缁堟姇绁ㄣ€傜粨鏋滆褰曞湪妗堬紝姘镐箙鍙煡銆?/div>
-          <div class="gov-principle-desc en-text">Anyone can submit an RFC. Public comment period 鈮?14 days, TSC final vote. Results recorded permanently and publicly accessible.</div>
+          <div class="gov-principle-desc zh-text">任何人可提交 RFC（征求意见稿）。公示期 ≥ 14 天，TSC 最终投票。结果记录在案，永久可查。</div>
+          <div class="gov-principle-desc en-text">Anyone can submit an RFC. Public comment period ≥ 14 days, TSC final vote. Results recorded permanently and publicly accessible.</div>
         </div>
         <div class="gov-principle">
-          <div class="gov-principle-title zh-text">鏃犲巶鍟嗘帶鍒?/div>
+          <div class="gov-principle-title zh-text">无厂商控制</div>
           <div class="gov-principle-title en-text">No Vendor Control</div>
-          <div class="gov-principle-desc zh-text">鍗曚竴缁勭粐鍦?TSC 鐨勫腑浣嶄笉瓒呰繃 1/3銆傚崗璁慨鏀规潈灞炰簬鏁翠釜绀惧尯锛屼笉灞炰簬浠讳綍鍒涘鏈烘瀯銆?/div>
+          <div class="gov-principle-desc zh-text">单一组织在 TSC 的席位不超过 1/3。协议修改权属于整个社区，不属于任何创始机构。</div>
           <div class="gov-principle-desc en-text">No single organization holds more than 1/3 of TSC seats. Protocol modification rights belong to the entire community, not any founding entity.</div>
         </div>
         <div class="gov-principle">
-          <div class="gov-principle-title zh-text">璐＄尞鍗冲奖鍝嶅姏</div>
+          <div class="gov-principle-title zh-text">贡献即影响力</div>
           <div class="gov-principle-title en-text">Contribution = Influence</div>
-          <div class="gov-principle-desc zh-text">缁存姢鑰呭拰鏍稿績鍥㈤槦甯綅鍧囦笌瀹為檯璐＄尞鎸傞挬锛屼笉鏄潵鑷儗鏅垨璧勬湰锛岃€屾槸鏉ヨ嚜鎸佺画鐨勫疄闄呭伐浣溿€?/div>
-          <div class="gov-principle-desc en-text">Maintainer and core team seats are linked to actual contribution 鈥?earned through sustained real work, not background or capital.</div>
+          <div class="gov-principle-desc zh-text">维护者和核心团队席位均与实际贡献挂钩，不是来自背景或资本，而是来自持续的实际工作。</div>
+          <div class="gov-principle-desc en-text">Maintainer and core team seats are linked to actual contribution — earned through sustained real work, not background or capital.</div>
         </div>
         <div class="gov-principle" style="border-left-color:var(--amber)">
           <div class="gov-principle-title" style="color:var(--amber)">
-            <span class="zh-text">鍗忚涓嶅睘浜庝换浣曚汉锛屽睘浜庢墍鏈変汉</span>
+            <span class="zh-text">协议不属于任何人，属于所有人</span>
             <span class="en-text">The protocol belongs to no one and to everyone</span>
           </div>
-          <div class="gov-principle-desc zh-text">AMCP 鏄紑鏀炬爣鍑嗭紝灏嗘案杩滀繚鎸佸紑鏀俱€備换浣曡瘯鍥惧皝闂垨绉佹湁鍖栧崗璁殑鎻愭锛屽皢琚珷绋嬭嚜鍔ㄥ惁鍐炽€?/div>
+          <div class="gov-principle-desc zh-text">AMCP 是开放标准，将永远保持开放。任何试图封闭或私有化协议的提案，将被章程自动否决。</div>
           <div class="gov-principle-desc en-text">AMCP is an open standard and will remain open forever. Any proposal to close or privatize the protocol will be automatically vetoed by the charter.</div>
         </div>
       </div>
@@ -1647,21 +1655,21 @@ hr.organic {
 <div class="cta-inner">
   <div>
     <h2 class="cta-title reveal">
-      <span class="zh-text">姝ゅ埢锛?em>鏈潵宸叉潵</em>銆?br>涓庢垜浠叡鍚屼功鍐欍€?/span>
+      <span class="zh-text">此刻，<em>未来已来</em>。<br>与我们共同书写。</span>
       <span class="en-text">The future is <em>already here</em>.<br>Write it with us.</span>
     </h2>
     <p class="cta-body reveal reveal-delay-1">
-      <span class="zh-text">StepMind 绀惧尯姝ｅ湪鏋勫缓 AI 鏃朵唬鏈€閲嶈鐨勫熀纭€璁炬柦涔嬩竴銆傛棤璁轰綘鏄伐绋嬪笀銆佺爺绌惰€呫€佷骇鍝佷汉杩樻槸 AI 鐖卞ソ鑰咃紝浣犵殑姣忎竴姝ヨ础鐚兘浼氭垚涓鸿繖涓崗璁繘鍖栧巻鍙茬殑涓€閮ㄥ垎锛屾案涔呰褰曞湪涓嶅彲鍙樼殑浜嬩欢鏃ュ織涓€?/span>
-      <span class="en-text">StepMind community is building one of the most important infrastructure pieces of the AI era. Whether you're an engineer, researcher, product person, or AI enthusiast 鈥?every contribution you make becomes part of this protocol's evolution history, permanently recorded in the immutable event log.</span>
+      <span class="zh-text">StepMind 社区正在构建 AI 时代最重要的基础设施之一。无论你是工程师、研究者、产品人还是 AI 爱好者，你的每一步贡献都会成为这个协议进化历史的一部分，永久记录在不可变的事件日志中。</span>
+      <span class="en-text">StepMind community is building one of the most important infrastructure pieces of the AI era. Whether you're an engineer, researcher, product person, or AI enthusiast — every contribution you make becomes part of this protocol's evolution history, permanently recorded in the immutable event log.</span>
     </p>
     <div class="cta-row" style="display:flex;gap:12px;flex-wrap:wrap">
       <a href="https://github.com/stepmind-amcp/amcp" class="btn-primary" target="_blank">
         <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1C3.69 1 1 3.69 1 7C1 9.67 2.72 11.93 5.1 12.72C5.4 12.78 5.5 12.59 5.5 12.43C5.5 12.29 5.5 11.87 5.5 11.37C3.92 11.73 3.57 10.59 3.57 10.59C3.3 9.9 2.91 9.71 2.91 9.71C2.36 9.34 2.95 9.35 2.95 9.35C3.56 9.39 3.88 9.98 3.88 9.98C4.42 10.89 5.27 10.63 5.52 10.47C5.58 10.08 5.74 9.82 5.91 9.67C4.25 9.52 2.5 8.89 2.5 6.07C2.5 5.24 2.8 4.57 3.28 4.04C3.22 3.89 2.96 3.13 3.35 2.09C3.35 2.09 3.86 1.93 5.5 2.92C6.1 2.76 6.74 2.67 7.37 2.67C8 2.67 8.64 2.76 9.24 2.92C10.88 1.93 11.39 2.09 11.39 2.09C11.77 3.13 11.51 3.89 11.46 4.04C11.94 4.57 12.23 5.24 12.23 6.07C12.23 8.9 10.47 9.51 8.8 9.66C9.03 9.85 9.23 10.22 9.23 10.78C9.23 11.57 9.22 12.21 9.22 12.43C9.22 12.6 9.33 12.79 9.63 12.72C12.28 11.93 14 9.67 14 7C14 3.69 11.31 1 8 1H7Z" fill="currentColor"/></svg>
-        <span class="zh-text">鍦?GitHub 涓婂姞鍏?/span>
+        <span class="zh-text">在 GitHub 上加入</span>
         <span class="en-text">Join on GitHub</span>
       </a>
       <a href="amcp-spec.html" class="btn-secondary">
-        <span class="zh-text">闃呰 AMCP 瑙勮寖</span>
+        <span class="zh-text">阅读 AMCP 规范</span>
         <span class="en-text">Read AMCP Spec</span>
       </a>
     </div>
@@ -1671,47 +1679,47 @@ hr.organic {
       <div class="action-card">
         <div class="action-num">01</div>
         <div class="action-content">
-          <div class="action-title zh-text">Star 骞?Watch 浠撳簱</div>
+          <div class="action-title zh-text">Star 并 Watch 仓库</div>
           <div class="action-title en-text">Star & Watch the Repository</div>
           <div class="action-desc">github.com/stepmind-amcp/amcp</div>
         </div>
-        <div class="action-arrow">鈫?/div>
+        <div class="action-arrow">→</div>
       </div>
       <div class="action-card">
         <div class="action-num">02</div>
         <div class="action-content">
-          <div class="action-title zh-text">闃呰鍗忚瑙勮寖</div>
+          <div class="action-title zh-text">阅读协议规范</div>
           <div class="action-title en-text">Read the Protocol Spec</div>
           <div class="action-desc">docs.stepmind.org/amcp/v1.0</div>
         </div>
-        <div class="action-arrow">鈫?/div>
+        <div class="action-arrow">→</div>
       </div>
       <div class="action-card">
         <div class="action-num">03</div>
         <div class="action-content">
-          <div class="action-title zh-text">杩愯鍙傝€冨疄鐜?/div>
+          <div class="action-title zh-text">运行参考实现</div>
           <div class="action-title en-text">Run the Reference Implementation</div>
           <div class="action-desc">docs.stepmind.org/quickstart</div>
         </div>
-        <div class="action-arrow">鈫?/div>
+        <div class="action-arrow">→</div>
       </div>
       <div class="action-card">
         <div class="action-num">04</div>
         <div class="action-content">
-          <div class="action-title zh-text">鍔犲叆绀惧尯璁ㄨ</div>
+          <div class="action-title zh-text">加入社区讨论</div>
           <div class="action-title en-text">Join Community Discussions</div>
           <div class="action-desc">github.com/stepmind-amcp/amcp/discussions</div>
         </div>
-        <div class="action-arrow">鈫?/div>
+        <div class="action-arrow">→</div>
       </div>
       <div class="action-card">
         <div class="action-num">05</div>
         <div class="action-content">
-          <div class="action-title zh-text">鎻愪氦浣犵殑绗竴涓础鐚?/div>
+          <div class="action-title zh-text">提交你的第一个贡献</div>
           <div class="action-title en-text">Submit Your First Contribution</div>
           <div class="action-desc">github.com/stepmind-amcp/amcp/issues?label=good+first+issue</div>
         </div>
-        <div class="action-arrow">鈫?/div>
+        <div class="action-arrow">→</div>
       </div>
     </div>
   </div>
@@ -1724,51 +1732,51 @@ hr.organic {
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-logo-text">Step<span>Mind</span></div>
-      <div class="footer-brand-sub zh-text">閫愭鎬濊€冿紝鏃犻檺杩涘寲</div>
+      <div class="footer-brand-sub zh-text">逐步思考，无限进化</div>
       <div class="footer-brand-sub en-text">Step by Step, Infinite Evolution</div>
-      <p class="footer-desc zh-text">鏋勫缓 AI 璁板繂灞傜殑寮€鏀惧崗璁熀纭€璁炬柦銆侫MCP 鍗忚鏄ぞ鍖虹殑鍏卞悓璐骇锛屾案涔呭紑鏀撅紝姘镐箙杩涘寲銆?/p>
-      <p class="footer-desc en-text">Building open protocol infrastructure for the AI memory layer. AMCP is community property 鈥?permanently open, permanently evolving.</p>
+      <p class="footer-desc zh-text">构建 AI 记忆层的开放协议基础设施。AMCP 协议是社区的共同财产，永久开放，永久进化。</p>
+      <p class="footer-desc en-text">Building open protocol infrastructure for the AI memory layer. AMCP is community property — permanently open, permanently evolving.</p>
     </div>
     <div>
-      <div class="footer-col-title zh-text">鍗忚</div>
+      <div class="footer-col-title zh-text">协议</div>
       <div class="footer-col-title en-text">Protocol</div>
       <ul class="footer-links">
-        <li><a href="#">AMCP v1.0 瑙勮寖 / Spec</a></li>
-        <li><a href="#">AMF 鏍煎紡 / Format</a></li>
-        <li><a href="#">AMQL 璇█ / Language</a></li>
-        <li><a href="#">涓€鑷存€ф祴璇?/ Conformance</a></li>
-        <li><a href="#">RFC 娴佺▼ / Process</a></li>
+        <li><a href="#">AMCP v1.0 规范 / Spec</a></li>
+        <li><a href="#">AMF 格式 / Format</a></li>
+        <li><a href="#">AMQL 语言 / Language</a></li>
+        <li><a href="#">一致性测试 / Conformance</a></li>
+        <li><a href="#">RFC 流程 / Process</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title zh-text">绀惧尯</div>
+      <div class="footer-col-title zh-text">社区</div>
       <div class="footer-col-title en-text">Community</div>
       <ul class="footer-links">
         <li><a href="#">GitHub</a></li>
-        <li><a href="#">璁ㄨ鍖?/ Discussions</a></li>
-        <li><a href="#">璐＄尞鎸囧崡 / Contribute</a></li>
-        <li><a href="#">琛屼负鍑嗗垯 / Code of Conduct</a></li>
-        <li><a href="#">娌荤悊鏂囨。 / Governance</a></li>
+        <li><a href="#">讨论区 / Discussions</a></li>
+        <li><a href="#">贡献指南 / Contribute</a></li>
+        <li><a href="#">行为准则 / Code of Conduct</a></li>
+        <li><a href="#">治理文档 / Governance</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title zh-text">璧勬簮</div>
+      <div class="footer-col-title zh-text">资源</div>
       <div class="footer-col-title en-text">Resources</div>
       <ul class="footer-links">
-        <li><a href="#">蹇€熷紑濮?/ Quickstart</a></li>
-        <li><a href="#">鍙傝€冨疄鐜?/ Reference Impl</a></li>
-        <li><a href="#">鍗氬 / Blog</a></li>
-        <li><a href="#">璺嚎鍥?/ Roadmap</a></li>
-        <li><a href="#">鏂伴椈璁㈤槄 / Newsletter</a></li>
+        <li><a href="#">快速开始 / Quickstart</a></li>
+        <li><a href="#">参考实现 / Reference Impl</a></li>
+        <li><a href="#">博客 / Blog</a></li>
+        <li><a href="#">路线图 / Roadmap</a></li>
+        <li><a href="#">新闻订阅 / Newsletter</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">
-      <span class="zh-text">漏 2026 StepMind 绀惧尯銆侫MCP 鍗忚浠?/span>
-      <span class="en-text">漏 2026 StepMind Community. AMCP Protocol released under</span>
+      <span class="zh-text">© 2026 StepMind 社区。AMCP 协议以</span>
+      <span class="en-text">© 2026 StepMind Community. AMCP Protocol released under</span>
       <a href="#"> Apache 2.0</a>
-      <span class="zh-text">寮€婧愬彂甯冿紝鐢?StepMind 绀惧尯鐙珛鍙戣捣涓庣淮鎶ゃ€?/span>
+      <span class="zh-text">开源发布，由 StepMind 社区独立发起与维护。</span>
       <span class="en-text">, independently founded and maintained by the StepMind Community.</span>
     </div>
     <div class="footer-badges">
@@ -1780,7 +1788,7 @@ hr.organic {
 </footer>
 
 <script>
-/* 鈹€鈹€鈹€ CURSOR 鈹€鈹€鈹€ */
+/* ─── CURSOR ─── */
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
 let mx = 0, my = 0, rx = 0, ry = 0;
@@ -1796,24 +1804,24 @@ function animateCursor() {
 }
 animateCursor();
 
-/* 鈹€鈹€鈹€ LANGUAGE TOGGLE 鈹€鈹€鈹€ */
+/* ─── LANGUAGE TOGGLE ─── */
 function toggleLang() {
   const html = document.documentElement;
   const current = html.getAttribute('data-lang');
   const next = current === 'zh' ? 'en' : 'zh';
   html.setAttribute('data-lang', next);
   document.title = next === 'zh'
-    ? 'StepMind 鈥?閫愭鎬濊€冿紝鏃犻檺杩涘寲 | Step by Step, Infinite Evolution'
-    : 'StepMind 鈥?Step by Step, Infinite Evolution | 閫愭鎬濊€冿紝鏃犻檺杩涘寲';
+    ? 'StepMind — 逐步思考，无限进化 | Step by Step, Infinite Evolution'
+    : 'StepMind — Step by Step, Infinite Evolution | 逐步思考，无限进化';
 }
 
-/* 鈹€鈹€鈹€ REVEAL ON SCROLL 鈹€鈹€鈹€ */
+/* ─── REVEAL ON SCROLL ─── */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-/* 鈹€鈹€鈹€ TABS 鈹€鈹€鈹€ */
+/* ─── TABS ─── */
 function switchTab(el, id) {
   document.querySelectorAll('.why-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.why-panel').forEach(p => p.classList.remove('active'));
@@ -1821,7 +1829,7 @@ function switchTab(el, id) {
   document.getElementById('tab-' + id).classList.add('active');
 }
 
-/* 鈹€鈹€鈹€ ACTIVE NAV 鈹€鈹€鈹€ */
+/* ─── ACTIVE NAV ─── */
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
@@ -1834,7 +1842,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-/* 鈹€鈹€鈹€ Prevent cursor on mobile 鈹€鈹€鈹€ */
+/* ─── Prevent cursor on mobile ─── */
 if ('ontouchstart' in window) {
   cursor.style.display = 'none';
   ring.style.display = 'none';
@@ -1843,4 +1851,3 @@ if ('ontouchstart' in window) {
 </script>
 </body>
 </html>
-
